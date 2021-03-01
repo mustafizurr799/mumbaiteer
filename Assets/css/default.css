@@ -1,0 +1,198 @@
+﻿body {
+    /*background-image: url('../img/webback.jpg' );
+    background-repeat: no-repeat;
+    background-attachment: fixed;*/
+    background-color:#0fa5de;
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+#dataTable td {
+    border: solid 0px #f7f206;
+}
+/* Shaddow Background */
+#left-shaddow {
+    background-image: url(../img/ck-left-shaddow-background.png);
+    left: 0;
+    position: fixed;
+    height: 100%;
+    width: 301px;
+    z-index: -1;
+}
+
+#right-shaddow {
+    background-image: url(../img/ck-right-shaddow-background.png);
+    right: 0;
+    position: fixed;
+    height: 100%;
+    width: 301px;
+}
+
+.CalcHeadCss {
+    font-family: Arial, Helvetica, sans-serif;
+    color: Black;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    background-image: url(../img/calcheadbg.png);
+    background-repeat: repeat-x;
+}
+
+.SrCss {
+    font-family: "Courier New", Courier, monospace;
+    font-weight: bold;
+    text-align: center;
+    font-size: 15px;
+    color: Black;
+}
+
+.calcrow1 {
+    background-image: url(../img/lotteryback4.png);
+    background-repeat: repeat;
+    color: Black;
+}
+
+.calcrow2 {
+    background-image: url(../img/lotteryback2.png);
+    background-repeat: repeat;
+    color: Black;
+}
+
+.calcrow3 {
+    background-image: url(../img/lotteryback3.png);
+    background-repeat: repeat;
+    color: Black;
+}
+
+.calcrow4 {
+    background-image: url(../img/lotteryback5.png);
+    background-repeat: repeat;
+    color: Black;
+}
+
+.calcrow5 {
+    background-image: url(../img/lotteryback1.png);
+    background-repeat: repeat;
+    color: Black;
+}
+
+.calcrow6 {
+    background-image: url(../img/lotteryback6.png);
+    background-repeat: repeat;
+    color: Black;
+}
+
+.Textcss {
+    width: 30px;
+    height: 20px;
+    border: 0px solid #fff;
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.Qtytxtcss {
+    width: 38px;
+    height: 16px;
+    border: 0px solid #fff;
+    text-align: center;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    background-color: #FFFFFF;
+}
+
+.Amnttxtcss {
+    width: 65px;
+    height: 15px;
+    border: 0px solid #fff;
+    text-align: center;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    background-color: #FFFFFF;
+}
+
+.CalcBox-out {
+    width: 38px;
+    height: 27px;
+    background-image: url(../img/CalcBox.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding-top: 8px;
+    padding-right: 2px;
+    padding-bottom: 2px;
+    padding-left: 2px;
+}
+
+.QtyBox-out {
+    width: 57px;
+    height: 24px;
+    background-image: url(../img/qtybox.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding-top: 5px;
+    padding-right: 2px;
+    padding-bottom: 2px;
+    padding-left: 7px;
+    margin: 0;
+}
+
+.Amtbox-out {
+    width: 80px;
+    height: 27px;
+    background-image: url(../img/amtbox.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding-top: 10px;
+    padding-right: 2px;
+    padding-left: 8px;
+    padding-bottom: 5px;
+}
+
+.loginbox-out {
+    width: 150px;
+    height: 25px;
+    background-image: url(../img/loginbox.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding-top: 8px;
+    padding-right: 2px;
+    padding-bottom: 2px;
+    padding-left: 8px;
+}
+
+.loginbox {
+    width: 130px;
+    height: 15px;
+    border: 0px solid #fff;
+}
+
+h3 {
+    line-height: 1px;
+    color: #0fa5de;
+    font-size: 20px;
+    text-shadow: 1px 3px 2px #1d1c1c;
+}
+
+h1 {
+    line-height: 1px;
+    font-size: 35px;
+}
+
+h2 {
+    line-height: 1px;
+}
+
+.name {
+    font-weight: bold;
+    text-align: center;
+    font-size: 25px;
+    color: Black;
+}

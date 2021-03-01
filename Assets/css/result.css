@@ -1,0 +1,258 @@
+﻿body {
+    /*background-image: url('../img/webback.jpg' );
+    background-repeat: no-repeat;
+    background-attachment: fixed;*/
+    background-color:#0fa5de;
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    font-family: Trebuchet MS, Arial;
+    font-size: 15px;
+}
+
+#dataTable td {
+    border: solid 0px #f7f206;
+}
+/* Shaddow Background */
+#left-shaddow {
+    background-image: url(../img/ck-left-shaddow-background.png);
+    left: 0;
+    position: fixed;
+    height: 100%;
+    width: 301px;
+    z-index: -1;
+}
+
+#right-shaddow {
+    background-image: url(../img/ck-right-shaddow-background.png);
+    right: 0;
+    position: fixed;
+    height: 100%;
+    width: 301px;
+}
+
+
+
+.form-control {
+    width: 35px;
+    height: 18px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+    color: #ed0808;
+    vertical-align: middle;
+    background-color: #ffffff;
+    border: 1px solid #c1bdb8;
+    border-top: 1px solid #a9a49d;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 2px 2px rgba(0,0,0,0.1),0px 2px 2px #fff;
+    box-shadow: inset 0 2px 2px rgba(0,0,0,0.1),0px 2px 2px #fff;
+    -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
+    .form-control:focus {
+        border-color: #66afe9;
+        outline: 0;
+        -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075),0 0 8px rgba(102,175,233,0.6);
+        box-shadow: inset 0 1px 1px rgba(0,0,0,0.075),0 0 8px rgba(102,175,233,0.6);
+    }
+
+    .form-control[disabled], .form-control[readonly], fieldset[disabled] .form-control {
+        cursor: not-allowed;
+        background-color: #eeeeee;
+    }
+
+.card {
+    height: 20px;
+    padding: 0 0 0 0;
+}
+
+h4 {
+    padding: 0 0 0 0;
+}
+
+.timestyle {
+    border: solid;
+    font-size: 18px;
+    font-family: sans-serif;
+    background-color: #1b6ff5;
+    color: white;
+}
+
+.btn-primary {
+    color: #ffffff;
+    background-color: #2980b9;
+    border-color: #20638f;
+    -webkit-box-shadow: inset 0px 1px 1px 0px rgba(255,255,255,0.3),0px 1px 3px 0px rgba(0,0,0,0.1);
+    box-shadow: inset 0px 1px 1px 0px rgba(255,255,255,0.3),0px 1px 3px 0px rgba(0,0,0,0.1);
+    text-shadow: -1px -1px 1px #164666;
+    border-bottom: 1px solid #164666;
+}
+
+    .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open .dropdown-toggle.btn-primary {
+        color: #ffffff;
+        background-color: #226998;
+        border-color: #15405d;
+    }
+
+    .btn-primary:active, .btn-primary.active, .open .dropdown-toggle.btn-primary {
+        background-image: none;
+    }
+
+    .btn-primary.disabled, .btn-primary[disabled], fieldset[disabled] .btn-primary, .btn-primary.disabled:hover, .btn-primary[disabled]:hover, fieldset[disabled] .btn-primary:hover, .btn-primary.disabled:focus, .btn-primary[disabled]:focus, fieldset[disabled] .btn-primary:focus, .btn-primary.disabled:active, .btn-primary[disabled]:active, fieldset[disabled] .btn-primary:active, .btn-primary.disabled.active, .btn-primary[disabled].active, fieldset[disabled] .btn-primary.active {
+        background-color: #2980b9;
+        border-color: #20638f;
+    }
+
+.btn-warning {
+    color: #ffffff;
+    background-color: #f0ad4e;
+    border-color: #eea236;
+    -webkit-box-shadow: inset 0px 1px 1px 0px rgba(255,255,255,0.3),0px 1px 3px 0px rgba(0,0,0,0.1);
+    box-shadow: inset 0px 1px 1px 0px rgba(255,255,255,0.3),0px 1px 3px 0px rgba(0,0,0,0.1);
+    text-shadow: -1px -1px 1px #c77c11;
+    border-bottom: 1px solid #df8a13;
+}
+
+    .btn-warning:hover, .btn-warning:focus, .btn-warning:active, .btn-warning.active, .open .dropdown-toggle.btn-warning {
+        color: #ffffff;
+        background-color: #ed9c28;
+        border-color: #d58512;
+    }
+
+    .btn-warning:active, .btn-warning.active, .open .dropdown-toggle.btn-warning {
+        background-image: none;
+    }
+
+    .btn-warning.disabled, .btn-warning[disabled], fieldset[disabled] .btn-warning, .btn-warning.disabled:hover, .btn-warning[disabled]:hover, fieldset[disabled] .btn-warning:hover, .btn-warning.disabled:focus, .btn-warning[disabled]:focus, fieldset[disabled] .btn-warning:focus, .btn-warning.disabled:active, .btn-warning[disabled]:active, fieldset[disabled] .btn-warning:active, .btn-warning.disabled.active, .btn-warning[disabled].active, fieldset[disabled] .btn-warning.active {
+        background-color: #f0ad4e;
+        border-color: #eea236;
+    }
+
+.btn-lg {
+    padding: 10px 16px;
+    font-size: 18px;
+    line-height: 1.33;
+    border-radius: 6px;
+}
+
+.btn-sm, .btn-xs {
+    padding: 5px 10px;
+    font-size: 12px;
+    line-height: 1.5;
+    border-radius: 3px;
+}
+
+.btn-xs {
+    padding: 1px 5px;
+}
+
+.btn-block {
+    display: block;
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+    .btn-block + .btn-block {
+        margin-top: 5px;
+    }
+
+input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="button"].btn-block {
+    width: 100%;
+}
+
+b {
+    font-size: 12px;
+}
+
+fieldset {
+    background-color: #fff;
+}
+
+.legend {
+    float: right;
+}
+
+.reptable {
+    border-spacing: 2px;
+    border-collapse: collapse;
+}
+
+    .reptable th {
+        padding: 5px;
+        border: 1px solid #ddd !important;
+        text-align: center;
+        line-height: 16px;
+        font-weight: bold;
+    }
+
+    .reptable td {
+        padding: 5px;
+        border: 1px solid #ddd !important;
+        text-align: center;
+        line-height: 15px;
+    }
+
+.caltable {
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+    .caltable th {
+        padding: 2px;
+        border: 1px solid #ddd !important;
+        text-align: center;
+        line-height: 15px;
+        font-weight: bold;
+    }
+
+    .caltable td {
+        padding: 2px;
+        border: 1px solid #ddd !important;
+        text-align: center;
+        line-height: 13px;
+    }
+
+.game {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1;
+}
+
+.chart {
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 1;
+    color: #164666;
+}
+
+.head {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1;
+}
+
+.sr {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1;
+}
+
+.font {
+    font-size: 20px;
+    color: #faf508;
+}
+
+.black {
+    font-size: 20px;
+    color: #0a0a0a;
+}
+
+.red {
+    font-size: 25px;
+    color: #fb103c;
+    font-weight: bold;
+}

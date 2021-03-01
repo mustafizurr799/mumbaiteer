@@ -1,0 +1,2177 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head><meta charset="UTF-8"><script data-ezscrex='false' data-cfasync='false' data-pagespeed-no-defer>var __ez=__ez||{};__ez.stms=Date.now();__ez.evt={};__ez.script={};__ez.ck=__ez.ck||{};__ez.template={};__ez.template.isOrig=true;__ez.queue=(function(){var count=0,incr=0,items=[],timeDelayFired=false,hpItems=[],lpItems=[],allowLoad=true;var obj={func:function(name,funcName,parameters,isBlock,blockedBy,deleteWhenComplete,proceedIfError){var self=this;this.name=name;this.funcName=funcName;this.parameters=parameters===null?null:(parameters instanceof Array)?parameters:[parameters];this.isBlock=isBlock;this.blockedBy=blockedBy;this.deleteWhenComplete=deleteWhenComplete;this.isError=false;this.isComplete=false;this.isInitialized=false;this.proceedIfError=proceedIfError;this.isTimeDelay=false;this.process=function(){log("... func = "+name);self.isInitialized=true;self.isComplete=true;log("... func.apply: "+name);var funcs=self.funcName.split('.');var func=null;if(funcs.length>3){}else if(funcs.length===3){func=window[funcs[0]][funcs[1]][funcs[2]];}else if(funcs.length===2){func=window[funcs[0]][funcs[1]];}else{func=window[self.funcName];}
+if(typeof func!=='undefined'&&func!==null){func.apply(null,this.parameters);}
+if(self.deleteWhenComplete===true)delete items[name];if(self.isBlock===true){log("----- F'D: "+self.name);processAll();}}},file:function(name,path,isBlock,blockedBy,async,defer,proceedIfError){var self=this;this.name=name;this.path=path;this.async=async;this.defer=defer;this.isBlock=isBlock;this.blockedBy=blockedBy;this.isInitialized=false;this.isError=false;this.isComplete=false;this.proceedIfError=proceedIfError;this.isTimeDelay=false;this.process=function(){self.isInitialized=true;log("... file = "+name);var scr=document.createElement('script');scr.src=path;if(async===true)scr.async=true;else if(defer===true)scr.defer=true;scr.onerror=function(){log("----- ERR'D: "+self.name);self.isError=true;if(self.isBlock===true){processAll();}};scr.onreadystatechange=scr.onload=function(){var state=scr.readyState;log("----- F'D: "+self.name);if((!state||/loaded|complete/.test(state))){self.isComplete=true;if(self.isBlock===true){processAll();}}};document.getElementsByTagName('head')[0].appendChild(scr);}}};function init(){window.addEventListener("load",function(){setTimeout(function(){timeDelayFired=true;log('TDELAY -----');processAll();},5000);},false);}
+function addFile(name,path,isBlock,blockedBy,async,defer,proceedIfError,priority){var item=new obj.file(name,path,isBlock,blockedBy,async,defer,proceedIfError);if(priority===true){hpItems[name]=item}else{lpItems[name]=item}
+items[name]=item;checkIfBlocked(item);}
+function setallowLoad(settobool){allowLoad=settobool}
+function addFunc(name,func,parameters,isBlock,blockedBy,autoInc,deleteWhenComplete,proceedIfError,priority){if(autoInc===true)name=name+"_"+incr++;var item=new obj.func(name,func,parameters,isBlock,blockedBy,deleteWhenComplete,proceedIfError);if(priority===true){hpItems[name]=item}else{lpItems[name]=item}
+items[name]=item;checkIfBlocked(item);}
+function addTimeDelayFile(name,path){var item=new obj.file(name,path,false,[],false,false,true);item.isTimeDelay=true;log(name+' ... '+' FILE! TDELAY');lpItems[name]=item;items[name]=item;checkIfBlocked(item);}
+function addTimeDelayFunc(name,func,parameters){var item=new obj.func(name,func,parameters,false,[],true,true);item.isTimeDelay=true;log(name+' ... '+' FUNCTION! TDELAY');lpItems[name]=item;items[name]=item;checkIfBlocked(item);}
+function checkIfBlocked(item){if(isBlocked(item)===true||allowLoad==false)return;item.process();}
+function isBlocked(item){if(item.isTimeDelay===true&&timeDelayFired===false){log(item.name+" blocked = TIME DELAY!");return true;}
+if(item.blockedBy instanceof Array){for(var i=0;i<item.blockedBy.length;i++){var block=item.blockedBy[i];if(items.hasOwnProperty(block)===false){log(item.name+" blocked = "+block);return true;}else if(item.proceedIfError===true&&items[block].isError===true){return false;}else if(items[block].isComplete===false){log(item.name+" blocked = "+block);return true;}}}
+return false;}
+function log(msg){var href=window.location.href;var reg=new RegExp('[?&]ezq=([^&#]*)','i');var string=reg.exec(href);var res=string?string[1]:null;if(res==="1")console.debug(msg);}
+function processAll(){count++;if(count>200)return;log("let's go");processItems(hpItems);processItems(lpItems);}
+function processItems(list){for(var i in list){if(list.hasOwnProperty(i)===false)continue;var item=list[i];if(item.isComplete===true||isBlocked(item)||item.isInitialized===true||item.isError===true){if(item.isError===true){log(item.name+': error')}else if(item.isComplete===true){log(item.name+': complete already')}else if(item.isInitialized===true){log(item.name+': initialized already')}}else{item.process();}}}
+init();return{addFile:addFile,addDelayFile:addTimeDelayFile,addFunc:addFunc,addDelayFunc:addTimeDelayFunc,items:items,processAll:processAll,setallowLoad:setallowLoad};})();__ez.evt.add=function(e,t,n){e.addEventListener?e.addEventListener(t,n,!1):e.attachEvent?e.attachEvent("on"+t,n):e["on"+t]=n()},__ez.evt.remove=function(e,t,n){e.removeEventListener?e.removeEventListener(t,n,!1):e.detachEvent?e.detachEvent("on"+t,n):delete e["on"+t]};__ez.script.add=function(e){var t=document.createElement("script");t.src=e,t.async=!0,t.type="text/javascript",document.getElementsByTagName("head")[0].appendChild(t)};__ez.queue.addFile('/detroitchicago/boise.js', '/detroitchicago/boise.js?gcb=192-0&cb=1', false, [], true, false, true, false);__ez.dot={};__ez.queue.addFile('/detroitchicago/memphis.js', '/detroitchicago/memphis.js?gcb=192-0&cb=5', false, [], true, false, true, false);__ez.queue.addFile('/detroitchicago/minneapolis.js', '/detroitchicago/minneapolis.js?gcb=192-0&cb=3', false, [], true, false, true, false);__ez.vep=(function(){var pixels=[],pxURL="/detroitchicago/grapefruit.gif";function AddPixel(vID,pixelData){if(__ez.dot.isDefined(vID)&&__ez.dot.isValid(pixelData)){pixels.push({type:'video',video_impression_id:vID,domain_id:__ez.dot.getDID(),t_epoch:__ez.dot.getEpoch(0),data:__ez.dot.dataToStr(pixelData)});}}
+function Fire(){if(typeof document.visibilityState!=='undefined'&&document.visibilityState==="prerender"){return;}
+if(__ez.dot.isDefined(pixels)&&pixels.length>0){while(pixels.length>0){var j=5;if(j>pixels.length){j=pixels.length;}
+var pushPixels=pixels.splice(0,j);var pixelURL=__ez.dot.getURL(pxURL)+"?orig="+(__ez.template.isOrig===true?1:0)+"&v="+btoa(JSON.stringify(pushPixels));__ez.dot.Fire(pixelURL);}}
+pixels=[];}
+return{Add:AddPixel,Fire:Fire};})();</script><script data-ezscrex='false' data-cfasync='false' data-pagespeed-no-defer>__ez.pel=(function(){var pixels=[],pxURL="/porpoiseant/army.gif";function AddAndFirePixel(adSlot,pixelData){AddPixel(adSlot,pixelData,0,0,0,0,0);Fire();}
+function AddAndFireOrigPixel(adSlot,pixelData){AddPixel(adSlot,pixelData,0,0,0,0,0,true);Fire();}
+function GetCurrentPixels(){return pixels;}
+function AddPixel(adSlot,pixelData,revenue,est_revenue,bid_floor_filled,bid_floor_prev,stat_source_id,isOrig){if(!__ez.dot.isDefined(adSlot)||__ez.dot.isAnyDefined(adSlot.getSlotElementId,adSlot.ElementId)==false){return;}
+var ad_position_id=parseInt(__ez.dot.getTargeting(adSlot,'ap'));var impId=__ez.dot.getSlotIID(adSlot),adUnit=__ez.dot.getAdUnit(adSlot,isOrig);var compId=parseInt(__ez.dot.getTargeting(adSlot,"compid"));var lineItemId=0;var creativeId=0;var ezimData=getEzimData(adSlot);if(typeof ezimData=='object'){if(ezimData.creative_id!==undefined){creativeId=ezimData.creative_id;}
+if(ezimData.line_item_id!==undefined){lineItemId=ezimData.line_item_id;}}
+if(__ez.dot.isDefined(impId,adUnit)&&__ez.dot.isValid(pixelData)){pixels.push({type:"impression",impression_id:impId,domain_id:__ez.dot.getDID(),unit:adUnit,t_epoch:__ez.dot.getEpoch(0),revenue:revenue,est_revenue:est_revenue,ad_position:ad_position_id,ad_size:"",bid_floor_filled:bid_floor_filled,bid_floor_prev:bid_floor_prev,stat_source_id:stat_source_id,country_code:__ez.dot.getCC(),pageview_id:__ez.dot.getPageviewId(),comp_id:compId,line_item_id:lineItemId,creative_id:creativeId,data:__ez.dot.dataToStr(pixelData),is_orig:isOrig||__ez.template.isOrig,});}}
+function AddPixelById(impFullId,pixelData,isOrig){var vals=impFullId.split('/');if(__ez.dot.isDefined(impFullId)&&vals.length===3&&__ez.dot.isValid(pixelData)){var adUnit=vals[0],impId=vals[2];pixels.push({type:"impression",impression_id:impId,domain_id:__ez.dot.getDID(),unit:adUnit,t_epoch:__ez.dot.getEpoch(0),pageview_id:__ez.dot.getPageviewId(),data:__ez.dot.dataToStr(pixelData),is_orig:isOrig||__ez.template.isOrig});}}
+function Fire(){if(typeof document.visibilityState!=='undefined'&&document.visibilityState==="prerender")return;if(__ez.dot.isDefined(pixels)&&pixels.length>0){var allPixels=[pixels.filter(function(pixel){return pixel.is_orig}),pixels.filter(function(pixel){return!pixel.is_orig})];allPixels.forEach(function(pixels){while(pixels.length>0){var isOrig=pixels[0].is_orig||false;var j=5;if(j>pixels.length){j=pixels.length;}
+var pushPixels=pixels.splice(0,j);var pixelURL=__ez.dot.getURL(pxURL)+"?orig="+(isOrig===true?1:0)+"&sts="+btoa(JSON.stringify(pushPixels));if(typeof window.isAmp!=='undefined'&&isAmp&&typeof window._ezaq!=='undefined'&&_ezaq.hasOwnProperty("domain_id")){pixelURL+="&visit_uuid="+_ezaq['visit_uuid'];}
+__ez.dot.Fire(pixelURL);}})}
+pixels=[];}
+function getEzimData(adSlot){if(typeof _ezim_d=="undefined"){return false}
+var adUnitName=__ez.dot.getAdUnitPath(adSlot).split('/').pop();if(typeof _ezim_d==='object'&&_ezim_d.hasOwnProperty(adUnitName)){return _ezim_d[adUnitName];}
+for(var ezimKey in _ezim_d){if(ezimKey.split('/').pop()===adUnitName){return _ezim_d[ezimKey];}}
+return false;}
+return{Add:AddPixel,AddAndFire:AddAndFirePixel,AddAndFireOrig:AddAndFireOrigPixel,AddById:AddPixelById,Fire:Fire,GetPixels:GetCurrentPixels,};})();__ez.queue.addFile('/detroitchicago/pacoima.js', '/detroitchicago/pacoima.js?gcb=192-0&cb=1', false, ['/detroitchicago/memphis.js'], true, false, true, false);__ez.queue.addFile('/detroitchicago/raleigh.js', '/detroitchicago/raleigh.js?gcb=192-0&cb=4', false, [], true, false, true, false);__ez.queue.addFile('/detroitchicago/tampa.js', '/detroitchicago/tampa.js?gcb=192-0&cb=3', false, [], true, false, true, false);</script><script data-ezscrex="false" data-cfasync="false">(function(){if("function"===typeof window.CustomEvent)return!1;window.CustomEvent=function(c,a){a=a||{bubbles:!1,cancelable:!1,detail:null};var b=document.createEvent("CustomEvent");b.initCustomEvent(c,a.bubbles,a.cancelable,a.detail);return b}})();</script><script data-ezscrex="false" data-cfasync="false">__ez.queue.addFile('/detroitchicago/tulsa.js', '/detroitchicago/tulsa.js?gcb=192-0&cb=5', false, [], true, false, true, false);</script><meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://gmpg.org/xfn/11" rel="profile" />
+	<title>Khanapara Teer Previous Results - TeerResult.in</title>
+	<style type="text/css">#wpadminbar #wp-admin-bar-cp_plugins_top_button .ab-icon:before {
+			content: "\f533";
+			top: 3px;
+		}
+		#wpadminbar #wp-admin-bar-cp_plugins_top_button .ab-icon {
+			transform: rotate(45deg);
+		}
+	</style>
+	<style type="text/css">#wpadminbar #wp-admin-bar-wccp_free_top_button .ab-icon:before {
+	content: "\f160";
+	color: #02CA02;
+	top: 3px;
+}
+#wpadminbar #wp-admin-bar-wccp_free_top_button .ab-icon {
+	transform: rotate(45deg);
+}
+	</style>
+	<!-- This site is optimized with the Yoast SEO plugin v12.7.1 - https://yoast.com/wordpress/plugins/seo/ --><meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1"/>
+	<link href="https://teerresult.in/khanapara-teer-previous-results/" rel="canonical" /><meta property="og:locale" content="en_US" /><meta property="og:type" content="article" /><meta property="og:title" content="Khanapara Teer Previous Results - TeerResult.in" /><meta property="og:description" content="In this page we have published Khanapara (Assam) Teer Previous results. This Assam teer old results will help you to predict future outcomes efficiently." /><meta property="og:url" content="https://teerresult.in/khanapara-teer-previous-results/" /><meta property="og:site_name" content="TeerResult.in" /><meta name="twitter:card" content="summary_large_image" /><meta name="twitter:description" content="In this page we have published Khanapara (Assam) Teer Previous results. This Assam teer old results will help you to predict future outcomes efficiently." /><meta name="twitter:title" content="Khanapara Teer Previous Results - TeerResult.in" /><script type='application/ld+json' class='yoast-schema-graph yoast-schema-graph--main'>{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://teerresult.in/#website","url":"https://teerresult.in/","name":"TeerResult.in","description":"Shillong, Khanapara, Juwai Teer Results &amp; News","potentialAction":{"@type":"SearchAction","target":"https://teerresult.in/?s={search_term_string}","query-input":"required name=search_term_string"}},{"@type":"WebPage","@id":"https://teerresult.in/khanapara-teer-previous-results/#webpage","url":"https://teerresult.in/khanapara-teer-previous-results/","inLanguage":"en-US","name":"Khanapara Teer Previous Results - TeerResult.in","isPartOf":{"@id":"https://teerresult.in/#website"},"datePublished":"2020-02-16T14:46:31+00:00","dateModified":"2020-02-16T15:58:52+00:00"}]}</script><!-- / Yoast SEO plugin. -->
+	<link href="//s.w.org" rel="dns-prefetch" />
+	<link href="https://teerresult.in/feed/" rel="alternate" title="TeerResult.in &amp;raquo; Feed" type="application/rss+xml" />
+	<link href="https://teerresult.in/comments/feed/" rel="alternate" title="TeerResult.in &amp;raquo; Comments Feed" type="application/rss+xml" /><script>
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/teerresult.in\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.3.6"}};
+			!function(e,a,t){var r,n,o,i,p=a.createElement("canvas"),s=p.getContext&&p.getContext("2d");function c(e,t){var a=String.fromCharCode;s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,e),0,0);var r=p.toDataURL();return s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,t),0,0),r===p.toDataURL()}function l(e){if(!s||!s.fillText)return!1;switch(s.textBaseline="top",s.font="600 32px Arial",e){case"flag":return!c([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])&&(!c([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!c([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]));case"emoji":return!c([55357,56424,55356,57342,8205,55358,56605,8205,55357,56424,55356,57340],[55357,56424,55356,57342,8203,55358,56605,8203,55357,56424,55356,57340])}return!1}function d(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(i=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},o=0;o<i.length;o++)t.supports[i[o]]=l(i[o]),t.supports.everything=t.supports.everything&&t.supports[i[o]],"flag"!==i[o]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[i[o]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(r=t.source||{}).concatemoji?d(r.concatemoji):r.wpemoji&&r.twemoji&&(d(r.twemoji),d(r.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+	<style type="text/css">img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+	</style>
+	<link href="https://teerresult.in/wp-content/themes/astra/assets/css/minified/style.min.css?ver=2.4.3" id="astra-theme-css-css" media="all" rel="stylesheet" />
+	<style id="astra-theme-css-inline-css" type="text/css">html{font-size:93.75%;}a,.page-title{color:#0274be;}a:hover,a:focus{color:#3a3a3a;}body,button,input,select,textarea,.ast-button,.ast-custom-button{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;font-weight:inherit;font-size:15px;font-size:1rem;}blockquote{color:#000000;}.site-title{font-size:35px;font-size:2.3333333333333rem;}header .site-logo-img .custom-logo-link img{max-width:248px;}.astra-logo-svg{width:248px;}.ast-archive-description .ast-archive-title{font-size:40px;font-size:2.6666666666667rem;}.site-header .site-description{font-size:15px;font-size:1rem;}.entry-title{font-size:40px;font-size:2.6666666666667rem;}.comment-reply-title{font-size:24px;font-size:1.6rem;}.ast-comment-list #cancel-comment-reply-link{font-size:15px;font-size:1rem;}h1,.entry-content h1{font-size:40px;font-size:2.6666666666667rem;}h2,.entry-content h2{font-size:30px;font-size:2rem;}h3,.entry-content h3{font-size:25px;font-size:1.6666666666667rem;}h4,.entry-content h4{font-size:20px;font-size:1.3333333333333rem;}h5,.entry-content h5{font-size:18px;font-size:1.2rem;}h6,.entry-content h6{font-size:15px;font-size:1rem;}.ast-single-post .entry-title,.page-title{font-size:30px;font-size:2rem;}#secondary,#secondary button,#secondary input,#secondary select,#secondary textarea{font-size:15px;font-size:1rem;}::selection{background-color:#0274be;color:#ffffff;}body,h1,.entry-title a,.entry-content h1,h2,.entry-content h2,h3,.entry-content h3,h4,.entry-content h4,h5,.entry-content h5,h6,.entry-content h6,.wc-block-grid__product-title{color:#3a3a3a;}.tagcloud a:hover,.tagcloud a:focus,.tagcloud a.current-item{color:#ffffff;border-color:#0274be;background-color:#0274be;}.main-header-menu a,.ast-header-custom-item a{color:#3a3a3a;}.main-header-menu li:hover > a,.main-header-menu li:hover > .ast-menu-toggle,.main-header-menu .ast-masthead-custom-menu-items a:hover,.main-header-menu li.focus > a,.main-header-menu li.focus > .ast-menu-toggle,.main-header-menu .current-menu-item > a,.main-header-menu .current-menu-ancestor > a,.main-header-menu .current_page_item > a,.main-header-menu .current-menu-item > .ast-menu-toggle,.main-header-menu .current-menu-ancestor > .ast-menu-toggle,.main-header-menu .current_page_item > .ast-menu-toggle{color:#0274be;}input:focus,input[type="text"]:focus,input[type="email"]:focus,input[type="url"]:focus,input[type="password"]:focus,input[type="reset"]:focus,input[type="search"]:focus,textarea:focus{border-color:#0274be;}input[type="radio"]:checked,input[type=reset],input[type="checkbox"]:checked,input[type="checkbox"]:hover:checked,input[type="checkbox"]:focus:checked,input[type=range]::-webkit-slider-thumb{border-color:#0274be;background-color:#0274be;box-shadow:none;}.site-footer a:hover + .post-count,.site-footer a:focus + .post-count{background:#0274be;border-color:#0274be;}.footer-adv .footer-adv-overlay{border-top-style:solid;border-top-color:#7a7a7a;}.ast-comment-meta{line-height:1.666666667;font-size:12px;font-size:0.8rem;}.single .nav-links .nav-previous,.single .nav-links .nav-next,.single .ast-author-details .author-title,.ast-comment-meta{color:#0274be;}.entry-meta,.entry-meta *{line-height:1.45;color:#0274be;}.entry-meta a:hover,.entry-meta a:hover *,.entry-meta a:focus,.entry-meta a:focus *{color:#3a3a3a;}.ast-404-layout-1 .ast-404-text{font-size:200px;font-size:13.333333333333rem;}.widget-title{font-size:21px;font-size:1.4rem;color:#3a3a3a;}#cat option,.secondary .calendar_wrap thead a,.secondary .calendar_wrap thead a:visited{color:#0274be;}.secondary .calendar_wrap #today,.ast-progress-val span{background:#0274be;}.secondary a:hover + .post-count,.secondary a:focus + .post-count{background:#0274be;border-color:#0274be;}.calendar_wrap #today > a{color:#ffffff;}.ast-pagination a,.page-links .page-link,.single .post-navigation a{color:#0274be;}.ast-pagination a:hover,.ast-pagination a:focus,.ast-pagination > span:hover:not(.dots),.ast-pagination > span.current,.page-links > .page-link,.page-links .page-link:hover,.post-navigation a:hover{color:#3a3a3a;}.ast-header-break-point .ast-mobile-menu-buttons-minimal.menu-toggle{background:transparent;color:#0274be;}.ast-header-break-point .ast-mobile-menu-buttons-outline.menu-toggle{background:transparent;border:1px solid #0274be;color:#0274be;}.ast-header-break-point .ast-mobile-menu-buttons-fill.menu-toggle{background:#0274be;}@media (max-width:921px){#secondary.secondary{padding-top:0;}.ast-separate-container .ast-article-post,.ast-separate-container .ast-article-single{padding:1.5em 2.14em;}.ast-separate-container #primary,.ast-separate-container #secondary{padding:1.5em 0;}.ast-separate-container.ast-right-sidebar #secondary{padding-left:1em;padding-right:1em;}.ast-separate-container.ast-two-container #secondary{padding-left:0;padding-right:0;}.ast-page-builder-template .entry-header #secondary{margin-top:1.5em;}.ast-page-builder-template #secondary{margin-top:1.5em;}#primary,#secondary{padding:1.5em 0;margin:0;}.ast-left-sidebar #content > .ast-container{display:flex;flex-direction:column-reverse;width:100%;}.ast-author-box img.avatar{margin:20px 0 0 0;}.ast-pagination{padding-top:1.5em;text-align:center;}.ast-pagination .next.page-numbers{display:inherit;float:none;}}@media (max-width:921px){.ast-page-builder-template.ast-left-sidebar #secondary{padding-right:20px;}.ast-page-builder-template.ast-right-sidebar #secondary{padding-left:20px;}.ast-right-sidebar #primary{padding-right:0;}.ast-right-sidebar #secondary{padding-left:0;}.ast-left-sidebar #primary{padding-left:0;}.ast-left-sidebar #secondary{padding-right:0;}.ast-pagination .prev.page-numbers{padding-left:.5em;}.ast-pagination .next.page-numbers{padding-right:.5em;}}@media (min-width:922px){.ast-separate-container.ast-right-sidebar #primary,.ast-separate-container.ast-left-sidebar #primary{border:0;}.ast-separate-container.ast-right-sidebar #secondary,.ast-separate-container.ast-left-sidebar #secondary{border:0;margin-left:auto;margin-right:auto;}.ast-separate-container.ast-two-container #secondary .widget:last-child{margin-bottom:0;}.ast-separate-container .ast-comment-list li .comment-respond{padding-left:2.66666em;padding-right:2.66666em;}.ast-author-box{-js-display:flex;display:flex;}.ast-author-bio{flex:1;}.error404.ast-separate-container #primary,.search-no-results.ast-separate-container #primary{margin-bottom:4em;}}@media (min-width:922px){.ast-right-sidebar #primary{border-right:1px solid #eee;}.ast-right-sidebar #secondary{border-left:1px solid #eee;margin-left:-1px;}.ast-left-sidebar #primary{border-left:1px solid #eee;}.ast-left-sidebar #secondary{border-right:1px solid #eee;margin-right:-1px;}.ast-separate-container.ast-two-container.ast-right-sidebar #secondary{padding-left:30px;padding-right:0;}.ast-separate-container.ast-two-container.ast-left-sidebar #secondary{padding-right:30px;padding-left:0;}}.wp-block-button .wp-block-button__link,{color:#ffffff;}.wp-block-button .wp-block-button__link{border-style:solid;border-top-width:0;border-right-width:0;border-left-width:0;border-bottom-width:0;border-color:#0274be;background-color:#0274be;color:#ffffff;font-family:inherit;font-weight:inherit;line-height:1;border-radius:2px;padding-top:10px;padding-right:40px;padding-bottom:10px;padding-left:40px;}.wp-block-button .wp-block-button__link:hover,.wp-block-button .wp-block-button__link:focus{color:#ffffff;background-color:#3a3a3a;border-color:#3a3a3a;}.menu-toggle,button,.ast-button,.ast-custom-button,.button,input#submit,input[type="button"],input[type="submit"],input[type="reset"]{border-style:solid;border-top-width:0;border-right-width:0;border-left-width:0;border-bottom-width:0;color:#ffffff;border-color:#0274be;background-color:#0274be;border-radius:2px;padding-top:10px;padding-right:40px;padding-bottom:10px;padding-left:40px;font-family:inherit;font-weight:inherit;line-height:1;}button:focus,.menu-toggle:hover,button:hover,.ast-button:hover,.button:hover,input[type=reset]:hover,input[type=reset]:focus,input#submit:hover,input#submit:focus,input[type="button"]:hover,input[type="button"]:focus,input[type="submit"]:hover,input[type="submit"]:focus{color:#ffffff;background-color:#3a3a3a;border-color:#3a3a3a;}@media (min-width:921px){.ast-container{max-width:100%;}}@media (min-width:544px){.ast-container{max-width:100%;}}@media (max-width:544px){.ast-separate-container .ast-article-post,.ast-separate-container .ast-article-single{padding:1.5em 1em;}.ast-separate-container #content .ast-container{padding-left:0.54em;padding-right:0.54em;}.ast-separate-container #secondary{padding-top:0;}.ast-separate-container.ast-two-container #secondary .widget{margin-bottom:1.5em;padding-left:1em;padding-right:1em;}.ast-separate-container .comments-count-wrapper{padding:1.5em 1em;}.ast-separate-container .ast-comment-list li.depth-1{padding:1.5em 1em;margin-bottom:1.5em;}.ast-separate-container .ast-comment-list .bypostauthor{padding:.5em;}.ast-separate-container .ast-archive-description{padding:1.5em 1em;}.ast-search-menu-icon.ast-dropdown-active .search-field{width:170px;}}@media (max-width:544px){.ast-comment-list .children{margin-left:0.66666em;}.ast-separate-container .ast-comment-list .bypostauthor li{padding:0 0 0 .5em;}}@media (max-width:921px){.ast-mobile-header-stack .main-header-bar .ast-search-menu-icon{display:inline-block;}.ast-header-break-point.ast-header-custom-item-outside .ast-mobile-header-stack .main-header-bar .ast-search-icon{margin:0;}.ast-comment-avatar-wrap img{max-width:2.5em;}.comments-area{margin-top:1.5em;}.ast-separate-container .comments-count-wrapper{padding:2em 2.14em;}.ast-separate-container .ast-comment-list li.depth-1{padding:1.5em 2.14em;}.ast-separate-container .comment-respond{padding:2em 2.14em;}}@media (max-width:921px){.ast-header-break-point .main-header-bar .ast-search-menu-icon.slide-search .search-form{right:0;}.ast-header-break-point .ast-mobile-header-stack .main-header-bar .ast-search-menu-icon.slide-search .search-form{right:-1em;}.ast-comment-avatar-wrap{margin-right:0.5em;}}@media (max-width:544px){.ast-separate-container .comment-respond{padding:1.5em 1em;}}@media (min-width:545px){.ast-page-builder-template .comments-area,.single.ast-page-builder-template .entry-header,.single.ast-page-builder-template .post-navigation{max-width:1240px;margin-left:auto;margin-right:auto;}}@media (max-width:921px){.ast-archive-description .ast-archive-title{font-size:40px;}.entry-title{font-size:30px;}h1,.entry-content h1{font-size:30px;}h2,.entry-content h2{font-size:25px;}h3,.entry-content h3{font-size:20px;}.ast-single-post .entry-title,.page-title{font-size:30px;}}@media (max-width:544px){.ast-archive-description .ast-archive-title{font-size:40px;}.entry-title{font-size:30px;}h1,.entry-content h1{font-size:30px;}h2,.entry-content h2{font-size:25px;}h3,.entry-content h3{font-size:20px;}.ast-single-post .entry-title,.page-title{font-size:30px;}}@media (max-width:921px){html{font-size:85.5%;}}@media (max-width:544px){html{font-size:85.5%;}}@media (min-width:922px){.ast-container{max-width:1240px;}}@font-face {font-family: "Astra";src: url(https://teerresult.in/wp-content/themes/astra/assets/fonts/astra.woff) format("woff"),url(https://teerresult.in/wp-content/themes/astra/assets/fonts/astra.ttf) format("truetype"),url(https://teerresult.in/wp-content/themes/astra/assets/fonts/astra.svg#astra) format("svg");font-weight: normal;font-style: normal;font-display: fallback;}@media (max-width:921px) {.main-header-bar .main-header-bar-navigation{display:none;}}.ast-desktop .main-header-menu.submenu-with-border .sub-menu,.ast-desktop .main-header-menu.submenu-with-border .children,.ast-desktop .main-header-menu.submenu-with-border .astra-full-megamenu-wrapper{border-color:#0274be;}.ast-desktop .main-header-menu.submenu-with-border .sub-menu,.ast-desktop .main-header-menu.submenu-with-border .children{border-top-width:2px;border-right-width:0px;border-left-width:0px;border-bottom-width:0px;border-style:solid;}.ast-desktop .main-header-menu.submenu-with-border .sub-menu .sub-menu,.ast-desktop .main-header-menu.submenu-with-border .children .children{top:-2px;}.ast-desktop .main-header-menu.submenu-with-border .sub-menu a,.ast-desktop .main-header-menu.submenu-with-border .children a{border-bottom-width:0px;border-style:solid;border-color:#eaeaea;}@media (min-width:922px){.main-header-menu .sub-menu li.ast-left-align-sub-menu:hover > ul,.main-header-menu .sub-menu li.ast-left-align-sub-menu.focus > ul{margin-left:-0px;}}.ast-small-footer{border-top-style:solid;border-top-width:1px;border-top-color:#7a7a7a;}.ast-small-footer-wrap{text-align:center;}@media (max-width:920px){.ast-404-layout-1 .ast-404-text{font-size:100px;font-size:6.6666666666667rem;}}.ast-breadcrumbs .trail-browse,.ast-breadcrumbs .trail-items,.ast-breadcrumbs .trail-items li{display:inline-block;margin:0;padding:0;border:none;background:inherit;text-indent:0;}.ast-breadcrumbs .trail-browse{font-size:inherit;font-style:inherit;font-weight:inherit;color:inherit;}.ast-breadcrumbs .trail-items{list-style:none;}.trail-items li::after{padding:0 0.3em;content:"\00bb";}.trail-items li:last-of-type::after{display:none;}.ast-header-break-point .site-header{border-bottom-width:1px;}@media (min-width:922px){.main-header-bar{border-bottom-width:1px;}}@media (min-width:922px){#primary{width:70%;}#secondary{width:30%;}}.ast-safari-browser-less-than-11 .main-header-menu .menu-item,.ast-safari-browser-less-than-11 .main-header-bar .ast-masthead-custom-menu-items{display:block;}.main-header-menu .menu-item,.main-header-bar .ast-masthead-custom-menu-items{-js-display:flex;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-moz-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column;}.main-header-menu > .menu-item > a{height:100%;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center;-js-display:flex;display:flex;}.ast-primary-menu-disabled .main-header-bar .ast-masthead-custom-menu-items{flex:unset;}.ast-desktop .astra-menu-animation-slide-up>.menu-item>.astra-full-megamenu-wrapper,.ast-desktop .astra-menu-animation-slide-up>.menu-item>.sub-menu,.ast-desktop .astra-menu-animation-slide-up>.menu-item>.sub-menu .sub-menu{opacity:0;visibility:hidden;transform:translateY(.5em);transition:visibility .2s ease,transform .2s ease}.ast-desktop .astra-menu-animation-slide-up>.menu-item .menu-item.focus>.sub-menu,.ast-desktop .astra-menu-animation-slide-up>.menu-item .menu-item:hover>.sub-menu,.ast-desktop .astra-menu-animation-slide-up>.menu-item.focus>.astra-full-megamenu-wrapper,.ast-desktop .astra-menu-animation-slide-up>.menu-item.focus>.sub-menu,.ast-desktop .astra-menu-animation-slide-up>.menu-item:hover>.astra-full-megamenu-wrapper,.ast-desktop .astra-menu-animation-slide-up>.menu-item:hover>.sub-menu{opacity:1;visibility:visible;transform:translateY(0);transition:opacity .2s ease,visibility .2s ease,transform .2s ease}.ast-desktop .astra-menu-animation-slide-up>.full-width-mega.menu-item.focus>.astra-full-megamenu-wrapper,.ast-desktop .astra-menu-animation-slide-up>.full-width-mega.menu-item:hover>.astra-full-megamenu-wrapper{-js-display:flex;display:flex}.ast-desktop .astra-menu-animation-slide-down>.menu-item>.astra-full-megamenu-wrapper,.ast-desktop .astra-menu-animation-slide-down>.menu-item>.sub-menu,.ast-desktop .astra-menu-animation-slide-down>.menu-item>.sub-menu .sub-menu{opacity:0;visibility:hidden;transform:translateY(-.5em);transition:visibility .2s ease,transform .2s ease}.ast-desktop .astra-menu-animation-slide-down>.menu-item .menu-item.focus>.sub-menu,.ast-desktop .astra-menu-animation-slide-down>.menu-item .menu-item:hover>.sub-menu,.ast-desktop .astra-menu-animation-slide-down>.menu-item.focus>.astra-full-megamenu-wrapper,.ast-desktop .astra-menu-animation-slide-down>.menu-item.focus>.sub-menu,.ast-desktop .astra-menu-animation-slide-down>.menu-item:hover>.astra-full-megamenu-wrapper,.ast-desktop .astra-menu-animation-slide-down>.menu-item:hover>.sub-menu{opacity:1;visibility:visible;transform:translateY(0);transition:opacity .2s ease,visibility .2s ease,transform .2s ease}.ast-desktop .astra-menu-animation-slide-down>.full-width-mega.menu-item.focus>.astra-full-megamenu-wrapper,.ast-desktop .astra-menu-animation-slide-down>.full-width-mega.menu-item:hover>.astra-full-megamenu-wrapper{-js-display:flex;display:flex}.ast-desktop .astra-menu-animation-fade>.menu-item>.astra-full-megamenu-wrapper,.ast-desktop .astra-menu-animation-fade>.menu-item>.sub-menu,.ast-desktop .astra-menu-animation-fade>.menu-item>.sub-menu .sub-menu{opacity:0;visibility:hidden;transition:opacity ease-in-out .3s}.ast-desktop .astra-menu-animation-fade>.menu-item .menu-item.focus>.sub-menu,.ast-desktop .astra-menu-animation-fade>.menu-item .menu-item:hover>.sub-menu,.ast-desktop .astra-menu-animation-fade>.menu-item.focus>.astra-full-megamenu-wrapper,.ast-desktop .astra-menu-animation-fade>.menu-item.focus>.sub-menu,.ast-desktop .astra-menu-animation-fade>.menu-item:hover>.astra-full-megamenu-wrapper,.ast-desktop .astra-menu-animation-fade>.menu-item:hover>.sub-menu{opacity:1;visibility:visible;transition:opacity ease-in-out .3s}.ast-desktop .astra-menu-animation-fade>.full-width-mega.menu-item.focus>.astra-full-megamenu-wrapper,.ast-desktop .astra-menu-animation-fade>.full-width-mega.menu-item:hover>.astra-full-megamenu-wrapper{-js-display:flex;display:flex}
+	</style>
+	<link href="https://teerresult.in/wp-includes/css/dist/block-library/style.min.css?ver=5.3.6" id="wp-block-library-css" media="all" rel="stylesheet" />
+	<link href="https://teerresult.in/wp-content/plugins/widget-countdown/includes/gutenberg/style.css?ver=5.3.6" id="wpda_countdown_gutenberg_css-css" media="all" rel="stylesheet" />
+	<link href="https://teerresult.in/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.1.7" id="contact-form-7-css" media="all" rel="stylesheet" />
+	<link href="https://teerresult.in/wp-content/themes/astra/assets/css/minified/compatibility/contact-form-7.min.css?ver=2.4.3" id="astra-contact-form-7-css" media="all" rel="stylesheet" />
+	<link href="https://teerresult.in/wp-content/uploads/astra-addon/astra-addon-6016bafebfb4a1-73479550.css?ver=2.4.1" id="astra-addon-css-css" media="all" rel="stylesheet" />
+	<style id="astra-addon-css-inline-css" type="text/css">@media (max-width:921px){.single.ast-separate-container .ast-author-meta{padding:1.5em 2.14em;}.single .ast-author-meta .post-author-avatar{margin-bottom:1em;}.ast-separate-container .ast-grid-2 .ast-article-post,.ast-separate-container .ast-grid-3 .ast-article-post,.ast-separate-container .ast-grid-4 .ast-article-post{width:100%;}.blog-layout-1 .post-content,.blog-layout-1 .ast-blog-featured-section{float:none;}.ast-separate-container .ast-article-post.remove-featured-img-padding.has-post-thumbnail .blog-layout-1 .post-content .ast-blog-featured-section:first-child .square .posted-on{margin-top:0;}.ast-separate-container .ast-article-post.remove-featured-img-padding.has-post-thumbnail .blog-layout-1 .post-content .ast-blog-featured-section:first-child .circle .posted-on{margin-top:1em;}.ast-separate-container .ast-article-post.remove-featured-img-padding .blog-layout-1 .post-content .ast-blog-featured-section:first-child .post-thumb-img-content{margin-top:-1.5em;}.ast-separate-container .ast-article-post.remove-featured-img-padding .blog-layout-1 .post-thumb-img-content{margin-left:-2.14em;margin-right:-2.14em;}.ast-separate-container .ast-article-single.remove-featured-img-padding .single-layout-1 .entry-header .post-thumb-img-content:first-child{margin-top:-1.5em;}.ast-separate-container .ast-article-single.remove-featured-img-padding .single-layout-1 .post-thumb-img-content{margin-left:-2.14em;margin-right:-2.14em;}.ast-separate-container.ast-blog-grid-2 .ast-article-post.remove-featured-img-padding.has-post-thumbnail .blog-layout-1 .post-content .ast-blog-featured-section .square .posted-on,.ast-separate-container.ast-blog-grid-3 .ast-article-post.remove-featured-img-padding.has-post-thumbnail .blog-layout-1 .post-content .ast-blog-featured-section .square .posted-on,.ast-separate-container.ast-blog-grid-4 .ast-article-post.remove-featured-img-padding.has-post-thumbnail .blog-layout-1 .post-content .ast-blog-featured-section .square .posted-on{margin-left:-1.5em;margin-right:-1.5em;}.ast-separate-container.ast-blog-grid-2 .ast-article-post.remove-featured-img-padding.has-post-thumbnail .blog-layout-1 .post-content .ast-blog-featured-section .circle .posted-on,.ast-separate-container.ast-blog-grid-3 .ast-article-post.remove-featured-img-padding.has-post-thumbnail .blog-layout-1 .post-content .ast-blog-featured-section .circle .posted-on,.ast-separate-container.ast-blog-grid-4 .ast-article-post.remove-featured-img-padding.has-post-thumbnail .blog-layout-1 .post-content .ast-blog-featured-section .circle .posted-on{margin-left:-0.5em;margin-right:-0.5em;}.ast-separate-container.ast-blog-grid-2 .ast-article-post.remove-featured-img-padding.has-post-thumbnail .blog-layout-1 .post-content .ast-blog-featured-section:first-child .square .posted-on,.ast-separate-container.ast-blog-grid-3 .ast-article-post.remove-featured-img-padding.has-post-thumbnail .blog-layout-1 .post-content .ast-blog-featured-section:first-child .square .posted-on,.ast-separate-container.ast-blog-grid-4 .ast-article-post.remove-featured-img-padding.has-post-thumbnail .blog-layout-1 .post-content .ast-blog-featured-section:first-child .square .posted-on{margin-top:0;}.ast-separate-container.ast-blog-grid-2 .ast-article-post.remove-featured-img-padding.has-post-thumbnail .blog-layout-1 .post-content .ast-blog-featured-section:first-child .circle .posted-on,.ast-separate-container.ast-blog-grid-3 .ast-article-post.remove-featured-img-padding.has-post-thumbnail .blog-layout-1 .post-content .ast-blog-featured-section:first-child .circle .posted-on,.ast-separate-container.ast-blog-grid-4 .ast-article-post.remove-featured-img-padding.has-post-thumbnail .blog-layout-1 .post-content .ast-blog-featured-section:first-child .circle .posted-on{margin-top:1em;}.ast-separate-container.ast-blog-grid-2 .ast-article-post.remove-featured-img-padding .blog-layout-1 .post-content .ast-blog-featured-section:first-child .post-thumb-img-content,.ast-separate-container.ast-blog-grid-3 .ast-article-post.remove-featured-img-padding .blog-layout-1 .post-content .ast-blog-featured-section:first-child .post-thumb-img-content,.ast-separate-container.ast-blog-grid-4 .ast-article-post.remove-featured-img-padding .blog-layout-1 .post-content .ast-blog-featured-section:first-child .post-thumb-img-content{margin-top:-1.5em;}.ast-separate-container.ast-blog-grid-2 .ast-article-post.remove-featured-img-padding .blog-layout-1 .post-thumb-img-content,.ast-separate-container.ast-blog-grid-3 .ast-article-post.remove-featured-img-padding .blog-layout-1 .post-thumb-img-content,.ast-separate-container.ast-blog-grid-4 .ast-article-post.remove-featured-img-padding .blog-layout-1 .post-thumb-img-content{margin-left:-1.5em;margin-right:-1.5em;}.blog-layout-2{display:flex;flex-direction:column-reverse;}.ast-separate-container .blog-layout-3,.ast-separate-container .blog-layout-1{display:block;}.ast-plain-container .ast-grid-2 .ast-article-post,.ast-plain-container .ast-grid-3 .ast-article-post,.ast-plain-container .ast-grid-4 .ast-article-post,.ast-page-builder-template .ast-grid-2 .ast-article-post,.ast-page-builder-template .ast-grid-3 .ast-article-post,.ast-page-builder-template .ast-grid-4 .ast-article-post{width:100%;}}@media (max-width:921px){.ast-separate-container .ast-article-post.remove-featured-img-padding.has-post-thumbnail .blog-layout-1 .post-content .ast-blog-featured-section .square .posted-on{margin-top:0;margin-left:-2.14em;}.ast-separate-container .ast-article-post.remove-featured-img-padding.has-post-thumbnail .blog-layout-1 .post-content .ast-blog-featured-section .circle .posted-on{margin-top:0;margin-left:-1.14em;}}@media (min-width:922px){.single .ast-author-meta .ast-author-details{display:flex;}.ast-separate-container.ast-blog-grid-2 .ast-archive-description,.ast-separate-container.ast-blog-grid-3 .ast-archive-description,.ast-separate-container.ast-blog-grid-4 .ast-archive-description{margin-bottom:1.33333em;}.blog-layout-2.ast-no-thumb .post-content,.blog-layout-3.ast-no-thumb .post-content{width:calc(100% - 5.714285714em);}.blog-layout-2.ast-no-thumb.ast-no-date-box .post-content,.blog-layout-3.ast-no-thumb.ast-no-date-box .post-content{width:100%;}.ast-separate-container .ast-grid-2 .ast-article-post.ast-separate-posts,.ast-separate-container .ast-grid-3 .ast-article-post.ast-separate-posts,.ast-separate-container .ast-grid-4 .ast-article-post.ast-separate-posts{border-bottom:0;}.ast-separate-container .ast-grid-2 > .site-main > .ast-row,.ast-separate-container .ast-grid-3 > .site-main > .ast-row,.ast-separate-container .ast-grid-4 > .site-main > .ast-row{margin-left:-1em;margin-right:-1em;display:flex;flex-flow:row wrap;align-items:stretch;}.ast-separate-container .ast-grid-2 > .site-main > .ast-row:before,.ast-separate-container .ast-grid-2 > .site-main > .ast-row:after,.ast-separate-container .ast-grid-3 > .site-main > .ast-row:before,.ast-separate-container .ast-grid-3 > .site-main > .ast-row:after,.ast-separate-container .ast-grid-4 > .site-main > .ast-row:before,.ast-separate-container .ast-grid-4 > .site-main > .ast-row:after{flex-basis:0;width:0;}.ast-separate-container .ast-grid-2 .ast-article-post,.ast-separate-container .ast-grid-3 .ast-article-post,.ast-separate-container .ast-grid-4 .ast-article-post{display:flex;padding:0;}.ast-plain-container .ast-grid-2 > .site-main > .ast-row,.ast-plain-container .ast-grid-3 > .site-main > .ast-row,.ast-plain-container .ast-grid-4 > .site-main > .ast-row,.ast-page-builder-template .ast-grid-2 > .site-main > .ast-row,.ast-page-builder-template .ast-grid-3 > .site-main > .ast-row,.ast-page-builder-template .ast-grid-4 > .site-main > .ast-row{margin-left:-1em;margin-right:-1em;display:flex;flex-flow:row wrap;align-items:stretch;}.ast-plain-container .ast-grid-2 > .site-main > .ast-row:before,.ast-plain-container .ast-grid-2 > .site-main > .ast-row:after,.ast-plain-container .ast-grid-3 > .site-main > .ast-row:before,.ast-plain-container .ast-grid-3 > .site-main > .ast-row:after,.ast-plain-container .ast-grid-4 > .site-main > .ast-row:before,.ast-plain-container .ast-grid-4 > .site-main > .ast-row:after,.ast-page-builder-template .ast-grid-2 > .site-main > .ast-row:before,.ast-page-builder-template .ast-grid-2 > .site-main > .ast-row:after,.ast-page-builder-template .ast-grid-3 > .site-main > .ast-row:before,.ast-page-builder-template .ast-grid-3 > .site-main > .ast-row:after,.ast-page-builder-template .ast-grid-4 > .site-main > .ast-row:before,.ast-page-builder-template .ast-grid-4 > .site-main > .ast-row:after{flex-basis:0;width:0;}.ast-plain-container .ast-grid-2 .ast-article-post,.ast-plain-container .ast-grid-3 .ast-article-post,.ast-plain-container .ast-grid-4 .ast-article-post,.ast-page-builder-template .ast-grid-2 .ast-article-post,.ast-page-builder-template .ast-grid-3 .ast-article-post,.ast-page-builder-template .ast-grid-4 .ast-article-post{display:flex;}.ast-plain-container .ast-grid-2 .ast-article-post:last-child,.ast-plain-container .ast-grid-3 .ast-article-post:last-child,.ast-plain-container .ast-grid-4 .ast-article-post:last-child,.ast-page-builder-template .ast-grid-2 .ast-article-post:last-child,.ast-page-builder-template .ast-grid-3 .ast-article-post:last-child,.ast-page-builder-template .ast-grid-4 .ast-article-post:last-child{margin-bottom:2.5em;}}@media (min-width:922px){.single .post-author-avatar,.single .post-author-bio{float:left;clear:right;}.single .ast-author-meta .post-author-avatar{margin-right:1.33333em;}.single .ast-author-meta .about-author-title-wrapper,.single .ast-author-meta .post-author-bio{text-align:left;}.blog-layout-2 .post-content{padding-right:2em;}.blog-layout-2.ast-no-date-box.ast-no-thumb .post-content{padding-right:0;}.blog-layout-3 .post-content{padding-left:2em;}.blog-layout-3.ast-no-date-box.ast-no-thumb .post-content{padding-left:0;}.ast-separate-container .ast-grid-2 .ast-article-post.ast-separate-posts:nth-child(2n+0),.ast-separate-container .ast-grid-2 .ast-article-post.ast-separate-posts:nth-child(2n+1),.ast-separate-container .ast-grid-3 .ast-article-post.ast-separate-posts:nth-child(2n+0),.ast-separate-container .ast-grid-3 .ast-article-post.ast-separate-posts:nth-child(2n+1),.ast-separate-container .ast-grid-4 .ast-article-post.ast-separate-posts:nth-child(2n+0),.ast-separate-container .ast-grid-4 .ast-article-post.ast-separate-posts:nth-child(2n+1){padding:0 1em 0;}}@media (max-width:544px){.ast-separate-container .ast-article-post.remove-featured-img-padding.has-post-thumbnail .blog-layout-1 .post-content .ast-blog-featured-section:first-child .circle .posted-on{margin-top:0.5em;}.ast-separate-container .ast-article-post.remove-featured-img-padding .blog-layout-1 .post-thumb-img-content,.ast-separate-container .ast-article-single.remove-featured-img-padding .single-layout-1 .post-thumb-img-content,.ast-separate-container.ast-blog-grid-2 .ast-article-post.remove-featured-img-padding.has-post-thumbnail .blog-layout-1 .post-content .ast-blog-featured-section .square .posted-on,.ast-separate-container.ast-blog-grid-3 .ast-article-post.remove-featured-img-padding.has-post-thumbnail .blog-layout-1 .post-content .ast-blog-featured-section .square .posted-on,.ast-separate-container.ast-blog-grid-4 .ast-article-post.remove-featured-img-padding.has-post-thumbnail .blog-layout-1 .post-content .ast-blog-featured-section .square .posted-on{margin-left:-1em;margin-right:-1em;}.ast-separate-container.ast-blog-grid-2 .ast-article-post.remove-featured-img-padding.has-post-thumbnail .blog-layout-1 .post-content .ast-blog-featured-section .circle .posted-on,.ast-separate-container.ast-blog-grid-3 .ast-article-post.remove-featured-img-padding.has-post-thumbnail .blog-layout-1 .post-content .ast-blog-featured-section .circle .posted-on,.ast-separate-container.ast-blog-grid-4 .ast-article-post.remove-featured-img-padding.has-post-thumbnail .blog-layout-1 .post-content .ast-blog-featured-section .circle .posted-on{margin-left:-0.5em;margin-right:-0.5em;}.ast-separate-container.ast-blog-grid-2 .ast-article-post.remove-featured-img-padding.has-post-thumbnail .blog-layout-1 .post-content .ast-blog-featured-section:first-child .circle .posted-on,.ast-separate-container.ast-blog-grid-3 .ast-article-post.remove-featured-img-padding.has-post-thumbnail .blog-layout-1 .post-content .ast-blog-featured-section:first-child .circle .posted-on,.ast-separate-container.ast-blog-grid-4 .ast-article-post.remove-featured-img-padding.has-post-thumbnail .blog-layout-1 .post-content .ast-blog-featured-section:first-child .circle .posted-on{margin-top:0.5em;}.ast-separate-container.ast-blog-grid-2 .ast-article-post.remove-featured-img-padding .blog-layout-1 .post-content .ast-blog-featured-section:first-child .post-thumb-img-content,.ast-separate-container.ast-blog-grid-3 .ast-article-post.remove-featured-img-padding .blog-layout-1 .post-content .ast-blog-featured-section:first-child .post-thumb-img-content,.ast-separate-container.ast-blog-grid-4 .ast-article-post.remove-featured-img-padding .blog-layout-1 .post-content .ast-blog-featured-section:first-child .post-thumb-img-content{margin-top:-1.33333em;}.ast-separate-container.ast-blog-grid-2 .ast-article-post.remove-featured-img-padding .blog-layout-1 .post-thumb-img-content,.ast-separate-container.ast-blog-grid-3 .ast-article-post.remove-featured-img-padding .blog-layout-1 .post-thumb-img-content,.ast-separate-container.ast-blog-grid-4 .ast-article-post.remove-featured-img-padding .blog-layout-1 .post-thumb-img-content{margin-left:-1em;margin-right:-1em;}.ast-separate-container .ast-grid-2 .ast-article-post .blog-layout-1,.ast-separate-container .ast-grid-2 .ast-article-post .blog-layout-2,.ast-separate-container .ast-grid-2 .ast-article-post .blog-layout-3{padding:1.33333em 1em;}.ast-separate-container .ast-grid-3 .ast-article-post .blog-layout-1,.ast-separate-container .ast-grid-4 .ast-article-post .blog-layout-1{padding:1.33333em 1em;}.single.ast-separate-container .ast-author-meta{padding:1.5em 1em;}}@media (max-width:544px){.ast-separate-container .ast-article-post.remove-featured-img-padding.has-post-thumbnail .blog-layout-1 .post-content .ast-blog-featured-section .square .posted-on{margin-left:-1em;}.ast-separate-container .ast-article-post.remove-featured-img-padding.has-post-thumbnail .blog-layout-1 .post-content .ast-blog-featured-section .circle .posted-on{margin-left:-0.5em;}}.ast-article-post .ast-date-meta .posted-on,.ast-article-post .ast-date-meta .posted-on *{background:#0274be;color:#ffffff;}.ast-article-post .ast-date-meta .posted-on .date-month,.ast-article-post .ast-date-meta .posted-on .date-year{color:#ffffff;}.ast-load-more:hover{color:#ffffff;border-color:#0274be;background-color:#0274be;}.ast-loader > div{background-color:#0274be;}.ast-separate-container .blog-layout-1,.ast-separate-container .blog-layout-2,.ast-separate-container .blog-layout-3{background-color:transparent;background-image:none;}.ast-separate-container .ast-article-post{background-color:#ffffff;background-image:none;}@media (max-width:921px){.ast-separate-container .ast-article-post{background-color:#ffffff;background-image:none;}}@media (max-width:544px){.ast-separate-container .ast-article-post{background-color:#ffffff;background-image:none;}}.ast-separate-container .ast-article-single,.ast-separate-container .comment-respond,.ast-separate-container .ast-comment-list li,.ast-separate-container .ast-woocommerce-container,.ast-separate-container .error-404,.ast-separate-container .no-results,.single.ast-separate-container .ast-author-meta,.ast-separate-container .related-posts-title-wrapper,.ast-separate-container.ast-two-container #secondary .widget,.ast-separate-container .comments-count-wrapper,.ast-box-layout.ast-plain-container .site-content,.ast-padded-layout.ast-plain-container .site-content{background-color:#ffffff;background-image:none;}@media (max-width:921px){.ast-separate-container .ast-article-single,.ast-separate-container .comment-respond,.ast-separate-container .ast-comment-list li,.ast-separate-container .ast-woocommerce-container,.ast-separate-container .error-404,.ast-separate-container .no-results,.single.ast-separate-container .ast-author-meta,.ast-separate-container .related-posts-title-wrapper,.ast-separate-container.ast-two-container #secondary .widget,.ast-separate-container .comments-count-wrapper,.ast-box-layout.ast-plain-container .site-content,.ast-padded-layout.ast-plain-container .site-content{background-color:#ffffff;background-image:none;}}@media (max-width:544px){.ast-separate-container .ast-article-single,.ast-separate-container .comment-respond,.ast-separate-container .ast-comment-list li,.ast-separate-container .ast-woocommerce-container,.ast-separate-container .error-404,.ast-separate-container .no-results,.single.ast-separate-container .ast-author-meta,.ast-separate-container .related-posts-title-wrapper,.ast-separate-container.ast-two-container #secondary .widget,.ast-separate-container .comments-count-wrapper,.ast-box-layout.ast-plain-container .site-content,.ast-padded-layout.ast-plain-container .site-content{background-color:#ffffff;background-image:none;}}.main-header-bar{background-color:#3a3a3a;background-image:none;}.main-header-menu,.ast-header-break-point .main-header-menu,.ast-header-break-point .ast-header-custom-item{background-color:#1c1c1c;background-image:none;}.main-header-menu .current-menu-item > a,.main-header-menu .current-menu-ancestor > a,.main-header-menu .current_page_item > a{color:#eeee22;}.main-header-menu a:hover,.ast-header-custom-item a:hover,.main-header-menu li:hover > a,.main-header-menu li.focus > a{background-color:#120a3f;color:#d1d1d1;}.main-header-menu .ast-masthead-custom-menu-items a:hover,.main-header-menu li:hover > .ast-menu-toggle,.main-header-menu li.focus > .ast-menu-toggle{color:#d1d1d1;}.main-header-menu,.main-header-menu a,.ast-header-custom-item,.ast-header-custom-item a,.ast-masthead-custom-menu-items,.ast-masthead-custom-menu-items a{color:#ffffff;}.main-header-menu .sub-menu,.main-header-menu .sub-menu a,.main-header-menu .children a{color:#dd3333;}.footer-adv .widget-title,.footer-adv .widget-title a.rsswidget,.ast-no-widget-row .widget-title{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;text-transform:inherit;}.footer-adv .widget > *:not(.widget-title){font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;}.ast-header-break-point .main-header-bar{background-color:#3a3a3a;background-image:none;}.ast-header-break-point .main-header-menu,.ast-header-break-point .ast-header-custom-item,.ast-header-break-point .ast-header-sections-navigation{background-color:#1c1c1c;background-image:none;}.ast-header-break-point .ast-primary-menu-disabled .ast-above-header-menu-items,.ast-header-break-point .ast-primary-menu-disabled .ast-below-header-menu-items{background-color:#1c1c1c;background-image:none;}.ast-header-break-point .ast-primary-menu-disabled .ast-below-header-menu-items{background-color:#1c1c1c;background-image:none;}.ast-header-break-point .main-header-menu,.ast-header-break-point .main-header-menu a,.ast-header-break-point .main-header-menu li.focus > .ast-menu-toggle,.ast-header-break-point .main-header-menu .current-menu-item > .ast-menu-toggle,.ast-header-break-point .main-header-menu .current-menu-ancestor > .ast-menu-toggle,.ast-header-break-point .main-header-menu .current_page_item > .ast-menu-toggle,.ast-header-break-point .ast-header-custom-item,.ast-header-break-point .ast-header-custom-item a,.ast-header-break-point .ast-masthead-custom-menu-items,.ast-header-break-point .ast-masthead-custom-menu-items a,.ast-header-break-point .ast-masthead-custom-menu-items .ast-inline-search form .ast-header-break-point .ast-below-header-merged-responsive .below-header-user-select,.ast-header-break-point .ast-above-header-menu-items,.ast-header-break-point .ast-above-header-menu-items a,.ast-header-break-point .ast-below-header-menu-items,.ast-header-break-point .ast-below-header-menu-items a,.ast-header-break-point .ast-below-header-merged-responsive .below-header-user-select .widget,.ast-header-break-point .ast-below-header-merged-responsive .below-header-user-select .widget-title{color:#ffffff;}.ast-header-break-point .ast-masthead-custom-menu-items .ast-inline-search form{border-color:#ffffff;}.ast-header-break-point .main-header-menu a:hover,.ast-header-break-point .ast-header-custom-item a:hover,.ast-header-break-point .main-header-menu li:hover > a,.ast-header-break-point .main-header-menu li.focus > a{background-color:#120a3f;}.ast-header-break-point .main-header-menu .ast-masthead-custom-menu-items a:hover,.ast-header-break-point .main-header-menu li:hover > .ast-menu-toggle,.ast-header-break-point .main-header-menu li.focus > .ast-menu-toggle{color:#d1d1d1;}.ast-header-break-point .main-header-menu li.current-menu-item > .ast-menu-toggle,.ast-header-break-point .main-header-menu li.current-menu-ancestor > .ast-menu-toggle,.ast-header-break-point .main-header-menu li.current_page_item > .ast-menu-toggle,.ast-header-break-point .main-header-menu li.current-menu-item > a,.ast-header-break-point .main-header-menu li.current-menu-ancestor > a,.ast-header-break-point .main-header-menu li.current_page_item > a{color:#eeee22;}.ast-header-break-point .main-header-menu .sub-menu,.ast-header-break-point .main-header-menu .sub-menu a,.ast-header-break-point .main-header-menu .children a,.ast-header-break-point .ast-header-sections-navigation .sub-menu a,.ast-header-break-point .ast-above-header-menu-items .sub-menu a,.ast-header-break-point .ast-below-header-menu-items .sub-menu a{color:#dd3333;}.ast-header-break-point .main-header-menu ul a{color:#dd3333;}.ast-header-break-point .ast-primary-menu-disabled .ast-merge-header-navigation-wrap .ast-above-header-menu-items,.ast-header-break-point .ast-primary-menu-disabled .ast-merge-header-navigation-wrap .ast-below-header-menu-items{background-color:#1c1c1c;background-image:none;}@media (max-width:921px){.ast-flyout-menu-enable.ast-main-header-nav-open .main-header-bar,.ast-fullscreen-menu-enable.ast-main-header-nav-open .main-header-bar{padding-bottom:1.5em;}}@media (max-width:544px){.ast-flyout-menu-enable.ast-main-header-nav-open .main-header-bar,.ast-fullscreen-menu-enable.ast-main-header-nav-open .main-header-bar{padding-bottom:1em;}}@media (min-width:922px){.ast-container{max-width:1240px;}}@media (min-width:993px){.ast-container{max-width:1240px;}}@media (min-width:1201px){.ast-container{max-width:1240px;}}.ast-default-menu-enable.ast-main-header-nav-open.ast-header-break-point .main-header-bar,.ast-main-header-nav-open .main-header-bar{padding-bottom:0;}.ast-fullscreen-menu-enable.ast-header-break-point .main-header-bar .main-header-bar-navigation .main-header-menu > .page_item_has_children > .ast-menu-toggle,.ast-fullscreen-menu-enable.ast-header-break-point .main-header-bar .main-header-bar-navigation .main-header-menu > .menu-item-has-children > .ast-menu-toggle{right:0;}.ast-fullscreen-menu-enable.ast-header-break-point .main-header-bar .main-header-bar-navigation ul.sub-menu .menu-item-has-children > .ast-menu-toggle,.ast-fullscreen-menu-enable.ast-header-break-point .main-header-bar .main-header-bar-navigation ul.children .page_item_has_children > .ast-menu-toggle{right:0;}.ast-fullscreen-menu-enable.ast-header-break-point .ast-above-header-menu ul.sub-menu li.menu-item-has-children > a,.ast-default-menu-enable.ast-header-break-point .ast-above-header-menu ul.sub-menu li.menu-item-has-children > a,.ast-flyout-menu-enable.ast-header-break-point .ast-above-header-menu ul.sub-menu li.menu-item-has-children > a{padding-right:0;}.ast-fullscreen-menu-enable.ast-header-break-point .ast-below-header-menu ul.sub-menu li.menu-item-has-children > a,.ast-default-menu-enable.ast-header-break-point .ast-below-header-menu ul.sub-menu li.menu-item-has-children > a,.ast-flyout-menu-enable.ast-header-break-point .ast-below-header-menu ul.sub-menu li.menu-item-has-children > a{padding-right:0;}.ast-fullscreen-below-menu-enable.ast-header-break-point .ast-below-header-enabled .ast-below-header-navigation ul.ast-below-header-menu li.menu-item-has-children > a,.ast-default-below-menu-enable.ast-header-break-point .ast-below-header-enabled .ast-below-header-navigation ul.ast-below-header-menu li.menu-item-has-children > a,.ast-flyout-below-menu-enable.ast-header-break-point .ast-below-header-enabled .ast-below-header-navigation ul.ast-below-header-menu li.menu-item-has-children > a{padding-right:0;}.ast-fullscreen-below-menu-enable.ast-header-break-point .ast-below-header-navigation .menu-item-has-children > .ast-menu-toggle,.ast-fullscreen-below-menu-enable.ast-header-break-point .ast-below-header-menu-items .menu-item-has-children > .ast-menu-toggle{right:0;}.ast-fullscreen-below-menu-enable .ast-below-header-enabled .ast-below-header-navigation ul.ast-below-header-menu li.menu-item-has-children ul.sub-menu .ast-menu-toggle{right:0;}.ast-fullscreen-above-menu-enable.ast-header-break-point .ast-above-header-enabled .ast-above-header-navigation ul.ast-above-header-menu li.menu-item-has-children > a,.ast-default-above-menu-enable.ast-header-break-point .ast-above-header-enabled .ast-above-header-navigation ul.ast-above-header-menu li.menu-item-has-children > a,.ast-flyout-above-menu-enable.ast-header-break-point .ast-above-header-enabled .ast-above-header-navigation ul.ast-above-header-menu li.menu-item-has-children > a{padding-right:0;}.ast-fullscreen-above-menu-enable.ast-header-break-point .ast-above-header-navigation .menu-item-has-children > .ast-menu-toggle,.ast-fullscreen-above-menu-enable.ast-header-break-point .ast-above-header-menu-items .menu-item-has-children > .ast-menu-toggle{right:0;}.ast-fullscreen-above-menu-enable .ast-above-header-enabled .ast-above-header-navigation ul.ast-above-header-menu li.menu-item-has-children ul.sub-menu .ast-menu-toggle{right:0;}@media (max-width:921px){.main-header-bar,.ast-header-break-point .main-header-bar,.ast-header-break-point .header-main-layout-2 .main-header-bar{padding-top:1.5em;padding-bottom:1.5em;}.ast-default-menu-enable.ast-main-header-nav-open.ast-header-break-point .main-header-bar,.ast-main-header-nav-open .main-header-bar{padding-bottom:0;}.main-navigation ul li a,.ast-header-break-point .main-navigation ul li a,.ast-header-break-point li.ast-masthead-custom-menu-items,li.ast-masthead-custom-menu-items{padding-top:0px;padding-right:20px;padding-bottom:0px;padding-left:20px;}.ast-header-break-point .main-header-bar .main-header-bar-navigation .page_item_has_children > .ast-menu-toggle,.ast-header-break-point .main-header-bar .main-header-bar-navigation .menu-item-has-children > .ast-menu-toggle{top:0px;right:calc( 20px - 0.907em );}.ast-fullscreen-menu-enable.ast-header-break-point .main-header-bar .main-header-bar-navigation .main-header-menu > .page_item_has_children > .ast-menu-toggle,.ast-fullscreen-menu-enable.ast-header-break-point .main-header-bar .main-header-bar-navigation .main-header-menu > .menu-item-has-children > .ast-menu-toggle{right:0;}.ast-flyout-menu-enable.ast-header-break-point .main-header-bar .main-header-bar-navigation .main-header-menu > .page_item_has_children > .ast-menu-toggle,.ast-flyout-menu-enable.ast-header-break-point .main-header-bar .main-header-bar-navigation .main-header-menu > .menu-item-has-children > .ast-menu-toggle{right:calc( 20px - 0.907em );}.ast-flyout-menu-enable.ast-header-break-point .main-header-bar .main-header-bar-navigation .page_item_has_children > .ast-menu-toggle,.ast-flyout-menu-enable.ast-header-break-point .main-header-bar .main-header-bar-navigation .menu-item-has-children > .ast-menu-toggle{top:0px;}.ast-desktop .main-navigation .ast-mm-template-content,.ast-desktop .main-navigation .ast-mm-custom-text-content,.main-navigation ul.sub-menu li a,.main-navigation ul.children li a,.ast-header-break-point .main-navigation ul.sub-menu li a,.ast-header-break-point .main-navigation ul.children li a{padding-top:0px;padding-right:0;padding-bottom:0px;padding-left:30px;}.ast-header-break-point .main-navigation ul.children li li a,.ast-header-break-point .main-navigation ul.sub-menu li li a{padding-left:calc( 30px + 10px );}.ast-header-break-point .main-navigation ul.children li li li a,.ast-header-break-point .main-navigation ul.sub-menu li li li a{padding-left:calc( 30px + 20px );}.ast-header-break-point .main-navigation ul.children li li li li a,.ast-header-break-point .main-navigation ul.sub-menu li li li li a{padding-left:calc( 30px + 30px );}.ast-header-break-point .main-navigation ul.children li li li li li a,.ast-header-break-point .main-navigation ul.sub-menu li li li li li a{padding-left:calc( 30px + 40px );}.ast-header-break-point .main-header-bar .main-header-bar-navigation ul.sub-menu .menu-item-has-children > .ast-menu-toggle,.ast-header-break-point .main-header-bar .main-header-bar-navigation ul.children .page_item_has_children > .ast-menu-toggle{top:0px;right:calc( 20px - 0.907em );}.ast-fullscreen-menu-enable.ast-header-break-point .main-header-bar .main-header-bar-navigation ul.sub-menu .menu-item-has-children > .ast-menu-toggle{margin-right:20px;right:0;}.ast-flyout-menu-enable.ast-header-break-point .main-header-bar .main-header-bar-navigation ul.sub-menu .menu-item-has-children > .ast-menu-toggle,.ast-flyout-menu-enable.ast-header-break-point .main-header-bar .main-header-bar-navigation ul.children .page_item_has_children > .ast-menu-toggle{right:calc( 20px - 0.907em );}.ast-flyout-menu-enable.ast-header-break-point .main-header-bar .main-header-bar-navigation .page_item_has_children .children .ast-menu-toggle,.ast-flyout-menu-enable.ast-header-break-point .main-header-bar .main-header-bar-navigation .menu-item-has-children .sub-menu .ast-menu-toggle{top:0px;}.ast-fullscreen-menu-enable.ast-header-break-point .main-navigation ul.sub-menu li.menu-item-has-children > a,.ast-fullscreen-menu-enable.ast-header-break-point .main-navigation ul.sub-menu li.page_item_has_children > a,.ast-default-menu-enable.ast-header-break-point .main-navigation ul.sub-menu li.menu-item-has-children > a,.ast-default-menu-enable.ast-header-break-point .main-navigation ul.sub-menu li.page_item_has_children > a,.ast-flyout-menu-enable.ast-header-break-point .main-navigation ul.sub-menu li.menu-item-has-children > a,.ast-flyout-menu-enable.ast-header-break-point .main-navigation ul.sub-menu li.page_item_has_children > a{padding-top:0px;padding-bottom:0px;padding-left:30px;}.ast-fullscreen-menu-enable.ast-header-break-point .ast-above-header-menu ul.sub-menu li.menu-item-has-children > a,.ast-default-menu-enable.ast-header-break-point .ast-above-header-menu ul.sub-menu li.menu-item-has-children > a,.ast-flyout-menu-enable.ast-header-break-point .ast-above-header-menu ul.sub-menu li.menu-item-has-children > a{padding-right:0;padding-top:0px;padding-bottom:0px;padding-left:30px;}.ast-fullscreen-menu-enable.ast-header-break-point .ast-below-header-menu ul.sub-menu li.menu-item-has-children > a,.ast-default-menu-enable.ast-header-break-point .ast-below-header-menu ul.sub-menu li.menu-item-has-children > a,.ast-flyout-menu-enable.ast-header-break-point .ast-below-header-menu ul.sub-menu li.menu-item-has-children > a{padding-right:0;padding-top:0px;padding-bottom:0px;padding-left:30px;}.ast-fullscreen-menu-enable.ast-header-break-point .ast-below-header-menu ul a,.ast-fullscreen-menu-enable.ast-header-break-point .ast-header-break-point .ast-below-header-actual-nav ul.sub-menu li a,.ast-fullscreen-menu-enable.ast-header-break-point .ast-below-header-navigation ul.sub-menu li a,.ast-fullscreen-menu-enable.ast-header-break-point .ast-below-header-menu-items ul.sub-menu li a,.ast-fullscreen-menu-enable.ast-header-break-point .main-navigation ul.sub-menu li a{padding-top:0px;padding-bottom:0px;padding-left:30px;}.ast-below-header,.ast-header-break-point .ast-below-header{padding-top:1em;padding-bottom:1em;}.ast-below-header-menu a,.below-header-nav-padding-support .below-header-section-1 .below-header-menu > li > a,.below-header-nav-padding-support .below-header-section-2 .below-header-menu > li > a,.ast-header-break-point .ast-below-header-actual-nav > ul > li > a{padding-top:0px;padding-right:20px;padding-bottom:0px;padding-left:20px;}.ast-desktop .ast-below-header-menu .ast-mm-template-content,.ast-desktop .ast-below-header-menu .ast-mm-custom-text-content,.ast-below-header-menu ul a,.ast-header-break-point .ast-below-header-actual-nav ul.sub-menu li a{padding-top:0px;padding-right:20px;padding-bottom:0px;padding-left:20px;}.ast-header-break-point .ast-below-header-actual-nav ul.sub-menu li li a,.ast-header-break-point .ast-below-header-menu-items ul.sub-menu li li a{padding-left:calc( 20px + 10px );}.ast-header-break-point .ast-below-header-actual-nav ul.sub-menu li li li a,.ast-header-break-point .ast-below-header-menu-items ul.sub-menu li li li a{padding-left:calc( 20px + 20px );}.ast-header-break-point .ast-below-header-actual-nav ul.sub-menu li li li li a,.ast-header-break-point .ast-below-header-menu-items ul.sub-menu li li li li a{padding-left:calc( 20px + 30px );}.ast-header-break-point .ast-below-header-actual-nav ul.sub-menu li li li li li a,.ast-header-break-point .ast-below-header-menu-items ul.sub-menu li li li li li a{padding-left:calc( 20px + 40px );}.ast-default-below-menu-enable.ast-header-break-point .ast-below-header-navigation .menu-item-has-children > .ast-menu-toggle,.ast-default-below-menu-enable.ast-header-break-point .ast-below-header-menu-items .menu-item-has-children > .ast-menu-toggle,.ast-flyout-below-menu-enable.ast-header-break-point .ast-below-header-navigation .menu-item-has-children > .ast-menu-toggle,.ast-flyout-below-menu-enable.ast-header-break-point .ast-below-header-menu-items .menu-item-has-children > .ast-menu-toggle{top:0px;right:calc( 20px - 0.907em );}.ast-default-below-menu-enable .ast-below-header-enabled .ast-below-header-navigation ul.ast-below-header-menu li.menu-item-has-children ul.sub-menu .ast-menu-toggle,.ast-flyout-below-menu-enable .ast-below-header-enabled .ast-below-header-navigation ul.ast-below-header-menu li.menu-item-has-children ul.sub-menu .ast-menu-toggle{top:0px;right:calc( 20px - 0.907em );}.ast-fullscreen-below-menu-enable.ast-header-break-point .ast-below-header-navigation .menu-item-has-children > .ast-menu-toggle,.ast-fullscreen-below-menu-enable.ast-header-break-point .ast-below-header-menu-items .menu-item-has-children > .ast-menu-toggle{right:0;}.ast-fullscreen-below-menu-enable .ast-below-header-enabled .ast-below-header-navigation ul.ast-below-header-menu li.menu-item-has-children ul.sub-menu .ast-menu-toggle{right:0;}.ast-above-header{padding-top:0px;padding-bottom:0px;}.ast-above-header-enabled .ast-above-header-navigation .ast-above-header-menu > li > a,.ast-header-break-point .ast-above-header-enabled .ast-above-header-menu > li:first-child > a,.ast-header-break-point .ast-above-header-enabled .ast-above-header-menu > li:last-child > a{padding-top:0px;padding-right:20px;padding-bottom:0px;padding-left:20px;}.ast-header-break-point .ast-above-header-navigation > ul > .menu-item-has-children > .ast-menu-toggle{top:0px;}.ast-desktop .ast-above-header-navigation .ast-mm-custom-text-content,.ast-desktop .ast-above-header-navigation .ast-mm-template-content,.ast-above-header-enabled .ast-above-header-navigation .ast-above-header-menu li ul a,.ast-header-break-point .ast-above-header-enabled .ast-above-header-menu li ul.sub-menu a,.ast-above-header-enabled .ast-above-header-menu > li:first-child .sub-menu li a{padding-top:0px;padding-right:20px;padding-bottom:0px;padding-left:20px;}.ast-header-break-point .ast-above-header-enabled .ast-above-header-menu li ul.sub-menu li a{padding-left:calc( 20px + 10px );}.ast-header-break-point .ast-above-header-enabled .ast-above-header-menu li ul.sub-menu li li a{padding-left:calc( 20px + 20px );}.ast-header-break-point .ast-above-header-enabled .ast-above-header-menu li ul.sub-menu li li li a{padding-left:calc( 20px + 30px );}.ast-header-break-point .ast-above-header-enabled .ast-above-header-menu li ul.sub-menu li li li li a{padding-left:calc( 20px + 40px );}.ast-default-above-menu-enable.ast-header-break-point .ast-above-header-navigation .menu-item-has-children > .ast-menu-toggle,.ast-default-above-menu-enable.ast-header-break-point .ast-above-header-menu-items .menu-item-has-children > .ast-menu-toggle,.ast-flyout-above-menu-enable.ast-header-break-point .ast-above-header-navigation .menu-item-has-children > .ast-menu-toggle,.ast-flyout-above-menu-enable.ast-header-break-point .ast-above-header-menu-items .menu-item-has-children > .ast-menu-toggle{top:0px;right:calc( 20px - 0.907em );}.ast-default-above-menu-enable .ast-above-header-enabled .ast-above-header-navigation ul.ast-above-header-menu li.menu-item-has-children ul.sub-menu .ast-menu-toggle,.ast-flyout-above-menu-enable .ast-above-header-enabled .ast-above-header-navigation ul.ast-above-header-menu li.menu-item-has-children ul.sub-menu .ast-menu-toggle{top:0px;right:calc( 20px - 0.907em );}.ast-fullscreen-above-menu-enable.ast-header-break-point .ast-above-header-navigation .menu-item-has-children > .ast-menu-toggle,.ast-fullscreen-above-menu-enable.ast-header-break-point .ast-above-header-menu-items .menu-item-has-children > .ast-menu-toggle{right:0;}.ast-fullscreen-above-menu-enable .ast-above-header-enabled .ast-above-header-navigation ul.ast-above-header-menu li.menu-item-has-children ul.sub-menu .ast-menu-toggle{margin-right:20px;right:0;}.ast-separate-container .ast-article-post,.ast-separate-container .ast-article-single,.ast-separate-container .ast-comment-list li.depth-1,.ast-separate-container .comment-respond,.single.ast-separate-container .ast-author-details,.ast-separate-container .ast-related-posts-wrap,.ast-separate-container .ast-woocommerce-container{padding-top:1.5em;padding-bottom:1.5em;}.ast-separate-container .ast-article-post,.ast-separate-container .ast-article-single,.ast-separate-container .comments-count-wrapper,.ast-separate-container .ast-comment-list li.depth-1,.ast-separate-container .comment-respond,.ast-separate-container .related-posts-title-wrapper,.ast-separate-container .related-posts-title-wrapper,.single.ast-separate-container .ast-author-details,.single.ast-separate-container .about-author-title-wrapper,.ast-separate-container .ast-related-posts-wrap,.ast-separate-container .ast-woocommerce-container{padding-right:2.14em;padding-left:2.14em;}.ast-separate-container.ast-right-sidebar #primary,.ast-separate-container.ast-left-sidebar #primary,.ast-separate-container #primary,.ast-plain-container #primary{margin-top:1.5em;margin-bottom:1.5em;}.ast-left-sidebar #primary,.ast-right-sidebar #primary,.ast-separate-container.ast-right-sidebar #primary,.ast-separate-container.ast-left-sidebar #primary,.ast-separate-container #primary{padding-left:0em;padding-right:0em;}.ast-footer-overlay{padding-top:2em;padding-bottom:2em;}.ast-small-footer .nav-menu a,.footer-sml-layout-2 .ast-small-footer-section-1 .menu-item a,.footer-sml-layout-2 .ast-small-footer-section-2 .menu-item a{padding-top:0em;padding-right:.5em;padding-bottom:0em;padding-left:.5em;}.ast-no-sidebar.ast-separate-container .entry-content .alignfull{margin-right:-2.14em;margin-left:-2.14em;}}@media (max-width:544px){.main-header-bar,.ast-header-break-point .main-header-bar,.ast-header-break-point .header-main-layout-2 .main-header-bar,.ast-header-break-point .ast-mobile-header-stack .main-header-bar{padding-top:1em;padding-bottom:1em;}.ast-default-menu-enable.ast-main-header-nav-open.ast-header-break-point .main-header-bar,.ast-main-header-nav-open .main-header-bar{padding-bottom:0;}.ast-fullscreen-menu-enable.ast-header-break-point .main-header-bar .main-header-bar-navigation .main-header-menu > .page_item_has_children > .ast-menu-toggle,.ast-fullscreen-menu-enable.ast-header-break-point .main-header-bar .main-header-bar-navigation .main-header-menu > .menu-item-has-children > .ast-menu-toggle{right:0;}.ast-desktop .main-navigation .ast-mm-template-content,.ast-desktop .main-navigation .ast-mm-custom-text-content,.main-navigation ul.sub-menu li a,.main-navigation ul.children li a,.ast-header-break-point .main-navigation ul.sub-menu li a,.ast-header-break-point .main-navigation ul.children li a{padding-right:0;}.ast-fullscreen-menu-enable.ast-header-break-point .main-header-bar .main-header-bar-navigation ul.sub-menu .menu-item-has-children > .ast-menu-toggle{right:0;}.ast-fullscreen-menu-enable.ast-header-break-point .ast-above-header-menu ul.sub-menu li.menu-item-has-children > a,.ast-default-menu-enable.ast-header-break-point .ast-above-header-menu ul.sub-menu li.menu-item-has-children > a,.ast-flyout-menu-enable.ast-header-break-point .ast-above-header-menu ul.sub-menu li.menu-item-has-children > a{padding-right:0;}.ast-fullscreen-menu-enable.ast-header-break-point .ast-below-header-menu ul.sub-menu li.menu-item-has-children > a,.ast-default-menu-enable.ast-header-break-point .ast-below-header-menu ul.sub-menu li.menu-item-has-children > a,.ast-flyout-menu-enable.ast-header-break-point .ast-below-header-menu ul.sub-menu li.menu-item-has-children > a{padding-right:0;}.ast-fullscreen-below-menu-enable.ast-header-break-point .ast-below-header-navigation .menu-item-has-children > .ast-menu-toggle,.ast-fullscreen-below-menu-enable.ast-header-break-point .ast-below-header-menu-items .menu-item-has-children > .ast-menu-toggle{right:0;}.ast-fullscreen-below-menu-enable .ast-below-header-enabled .ast-below-header-navigation ul.ast-below-header-menu li.menu-item-has-children ul.sub-menu .ast-menu-toggle{right:0;}.ast-above-header{padding-top:0.5em;}.ast-fullscreen-above-menu-enable.ast-header-break-point .ast-above-header-enabled .ast-above-header-navigation ul.ast-above-header-menu li.menu-item-has-children > a,.ast-default-above-menu-enable.ast-header-break-point .ast-above-header-enabled .ast-above-header-navigation ul.ast-above-header-menu li.menu-item-has-children > a,.ast-flyout-above-menu-enable.ast-header-break-point .ast-above-header-enabled .ast-above-header-navigation ul.ast-above-header-menu li.menu-item-has-children > a{padding-right:0;}.ast-fullscreen-above-menu-enable.ast-header-break-point .ast-above-header-navigation .menu-item-has-children > .ast-menu-toggle,.ast-fullscreen-above-menu-enable.ast-header-break-point .ast-above-header-menu-items .menu-item-has-children > .ast-menu-toggle{right:0;}.ast-fullscreen-above-menu-enable .ast-above-header-enabled .ast-above-header-navigation ul.ast-above-header-menu li.menu-item-has-children ul.sub-menu .ast-menu-toggle{right:0;}.ast-separate-container .ast-article-post,.ast-separate-container .ast-article-single,.ast-separate-container .ast-comment-list li.depth-1,.ast-separate-container .comment-respond,.single.ast-separate-container .ast-author-details,.ast-separate-container .ast-related-posts-wrap,.ast-separate-container .ast-woocommerce-container{padding-top:1.5em;padding-bottom:1.5em;}.ast-separate-container .ast-article-post,.ast-separate-container .ast-article-single,.ast-separate-container .comments-count-wrapper,.ast-separate-container .ast-comment-list li.depth-1,.ast-separate-container .comment-respond,.ast-separate-container .related-posts-title-wrapper,.ast-separate-container .related-posts-title-wrapper,.single.ast-separate-container .ast-author-details,.single.ast-separate-container .about-author-title-wrapper,.ast-separate-container .ast-related-posts-wrap,.ast-separate-container .ast-woocommerce-container{padding-right:1em;padding-left:1em;}.ast-no-sidebar.ast-separate-container .entry-content .alignfull{margin-right:-1em;margin-left:-1em;}}@media (max-width:544px){.ast-header-break-point .header-main-layout-2 .site-branding,.ast-header-break-point .ast-mobile-header-stack .ast-mobile-menu-buttons{padding-bottom:0;}}@media (max-width:921px){.ast-separate-container.ast-two-container #secondary .widget,.ast-separate-container #secondary .widget{margin-bottom:1.5em;}}@media (max-width:921px){.ast-separate-container #primary{padding-top:0;}}@media (max-width:921px){.ast-separate-container #primary{padding-bottom:0;}}#ast-scroll-top{background-color:#0274be;font-size:15px;font-size:1rem;}.site-title,.site-title a{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;text-transform:inherit;}.site-header .site-description{text-transform:inherit;}.secondary .widget-title{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;text-transform:inherit;}.secondary .widget > *:not(.widget-title){font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;}.ast-single-post .entry-title,.page-title{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;text-transform:inherit;}.ast-archive-description .ast-archive-title{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;text-transform:inherit;}.blog .entry-title,.blog .entry-title a,.archive .entry-title,.archive .entry-title a,.search .entry-title,.search .entry-title a {font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;text-transform:inherit;}h1,.entry-content h1{text-transform:inherit;}h2,.entry-content h2{text-transform:inherit;}h3,.entry-content h3{text-transform:inherit;}h4,.entry-content h4{text-transform:inherit;}h5,.entry-content h5{text-transform:inherit;}h6,.entry-content h6{text-transform:inherit;}.ast-desktop .ast-mega-menu-enabled.ast-below-header-menu li a:hover,.ast-desktop .ast-mega-menu-enabled.ast-below-header-menu li a:focus{background-color:#575757;}.ast-desktop .ast-below-header-navigation .astra-megamenu-li li a:hover,.ast-desktop .ast-below-header-navigation .astra-megamenu-li .menu-item a:focus{color:#ffffff;}.ast-above-header-menu .astra-full-megamenu-wrapper{box-shadow:0 5px 20px rgba(0,0,0,0.06);}.ast-above-header-menu .astra-full-megamenu-wrapper .sub-menu,.ast-above-header-menu .astra-megamenu .sub-menu{box-shadow:none;}.ast-below-header-menu.ast-mega-menu-enabled.submenu-with-border .astra-full-megamenu-wrapper{border-color:#ffffff;}.ast-below-header-menu .astra-full-megamenu-wrapper{box-shadow:0 5px 20px rgba(0,0,0,0.06);}.ast-below-header-menu .astra-full-megamenu-wrapper .sub-menu,.ast-below-header-menu .astra-megamenu .sub-menu{box-shadow:none;}.ast-desktop .main-header-menu.submenu-with-border .astra-megamenu,.ast-desktop .main-header-menu.ast-mega-menu-enabled.submenu-with-border .astra-full-megamenu-wrapper{border-top-width:2px;border-left-width:0px;border-right-width:0px;border-bottom-width:0px;border-style:solid;}.ast-desktop .main-header-menu .astra-megamenu-li li a:hover,.ast-desktop .main-header-menu .astra-megamenu-li .menu-item a:focus{color:#d1d1d1;}.ast-desktop .ast-mega-menu-enabled.main-header-menu li a:hover,.ast-desktop .ast-mega-menu-enabled.main-header-menu li a:focus{background-color:#120a3f;}.ast-desktop .ast-mega-menu-enabled.main-header-menu .menu-item-heading > a{font-weight:700;font-size:1.1em;}.ast-desktop .ast-above-header .submenu-with-border .astra-full-megamenu-wrapper{border-top-width:2px;border-left-width:0px;border-right-width:0px;border-bottom-width:0px;border-style:solid;}.ast-desktop .ast-below-header .submenu-with-border .astra-full-megamenu-wrapper{border-top-width:2px;border-left-width:0px;border-right-width:0px;border-bottom-width:0px;border-style:solid;}.ast-advanced-headers-different-logo .advanced-header-logo,.ast-header-break-point .ast-has-mobile-header-logo .advanced-header-logo{display:inline-block;}.ast-header-break-point.ast-advanced-headers-different-logo .ast-has-mobile-header-logo .ast-mobile-header-logo{display:none;}.ast-advanced-headers-layout{width:100%;}.ast-header-break-point .ast-advanced-headers-parallax{background-attachment:fixed;}
+	</style>
+	<link href="https://teerresult.in/wp-content/tablepress-combined.min.css?ver=38" id="tablepress-default-css" media="all" rel="stylesheet" /><!--[if IE]>
+<script src='https://teerresult.in/wp-content/themes/astra/assets/js/minified/flexibility.min.js?ver=2.4.3'></script>
+<script>
+flexibility(document.documentElement);
+</script>
+<![endif]--><script src='https://teerresult.in/wp-includes/js/jquery/jquery.js?ver=1.12.4-wp'></script><script src='https://teerresult.in/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+	<link href="https://teerresult.in/wp-json/" rel="https://api.w.org/" />
+	<link href="https://teerresult.in/xmlrpc.php?rsd" rel="EditURI" title="RSD" type="application/rsd+xml" />
+	<link href="https://teerresult.in/wp-includes/wlwmanifest.xml" rel="wlwmanifest" type="application/wlwmanifest+xml" /><meta name="generator" content="WordPress 5.3.6" />
+	<link href="https://teerresult.in/?p=698" rel="shortlink" />
+	<link href="https://teerresult.in/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fteerresult.in%2Fkhanapara-teer-previous-results%2F" rel="alternate" type="application/json+oembed" />
+	<link href="https://teerresult.in/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fteerresult.in%2Fkhanapara-teer-previous-results%2F&amp;format=xml" rel="alternate" type="text/xml+oembed" /><script id="wpcp_disable_selection" type="text/javascript">
+var image_save_msg='You are not allowed to save images!';
+	var no_menu_msg='Context Menu disabled!';
+	var smessage = "";
+
+function disableEnterKey(e)
+{
+	var elemtype = e.target.tagName;
+	
+	elemtype = elemtype.toUpperCase();
+	
+	if (elemtype == "TEXT" || elemtype == "TEXTAREA" || elemtype == "INPUT" || elemtype == "PASSWORD" || elemtype == "SELECT" || elemtype == "OPTION" || elemtype == "EMBED")
+	{
+		elemtype = 'TEXT';
+	}
+	
+	if (e.ctrlKey){
+     var key;
+     if(window.event)
+          key = window.event.keyCode;     //IE
+     else
+          key = e.which;     //firefox (97)
+    //if (key != 17) alert(key);
+     if (elemtype!= 'TEXT' && (key == 97 || key == 65 || key == 67 || key == 99 || key == 88 || key == 120 || key == 26 || key == 85  || key == 86 || key == 83 || key == 43 || key == 73))
+     {
+		if(wccp_free_iscontenteditable(e)) return true;
+		show_wpcp_message('You are not allowed to copy content or view source');
+		return false;
+     }else
+     	return true;
+     }
+}
+
+
+/*For contenteditable tags*/
+function wccp_free_iscontenteditable(e)
+{
+	var e = e || window.event; // also there is no e.target property in IE. instead IE uses window.event.srcElement
+  	
+	var target = e.target || e.srcElement;
+
+	var elemtype = e.target.nodeName;
+	
+	elemtype = elemtype.toUpperCase();
+	
+	var iscontenteditable = "false";
+		
+	if(typeof target.getAttribute!="undefined" ) iscontenteditable = target.getAttribute("contenteditable"); // Return true or false as string
+	
+	var iscontenteditable2 = false;
+	
+	if(typeof target.isContentEditable!="undefined" ) iscontenteditable2 = target.isContentEditable; // Return true or false as boolean
+
+	if(target.parentElement.isContentEditable) iscontenteditable2 = true;
+	
+	if (iscontenteditable == "true" || iscontenteditable2 == true)
+	{
+		if(typeof target.style!="undefined" ) target.style.cursor = "text";
+		
+		return true;
+	}
+}
+
+////////////////////////////////////
+function disable_copy(e)
+{	
+	var e = e || window.event; // also there is no e.target property in IE. instead IE uses window.event.srcElement
+	
+	var elemtype = e.target.tagName;
+	
+	elemtype = elemtype.toUpperCase();
+	
+	if (elemtype == "TEXT" || elemtype == "TEXTAREA" || elemtype == "INPUT" || elemtype == "PASSWORD" || elemtype == "SELECT" || elemtype == "OPTION" || elemtype == "EMBED")
+	{
+		elemtype = 'TEXT';
+	}
+	
+	if(wccp_free_iscontenteditable(e)) return true;
+	
+	var isSafari = /Safari/.test(navigator.userAgent) && /Apple Computer/.test(navigator.vendor);
+	
+	var checker_IMG = '';
+	if (elemtype == "IMG" && checker_IMG == 'checked' && e.detail >= 2) {show_wpcp_message(alertMsg_IMG);return false;}
+	if (elemtype != "TEXT")
+	{
+		if (smessage !== "" && e.detail == 2)
+			show_wpcp_message(smessage);
+		
+		if (isSafari)
+			return true;
+		else
+			return false;
+	}	
+}
+
+//////////////////////////////////////////
+function disable_copy_ie()
+{
+	var e = e || window.event;
+	var elemtype = window.event.srcElement.nodeName;
+	elemtype = elemtype.toUpperCase();
+	if(wccp_free_iscontenteditable(e)) return true;
+	if (elemtype == "IMG") {show_wpcp_message(alertMsg_IMG);return false;}
+	if (elemtype != "TEXT" && elemtype != "TEXTAREA" && elemtype != "INPUT" && elemtype != "PASSWORD" && elemtype != "SELECT" && elemtype != "OPTION" && elemtype != "EMBED")
+	{
+		return false;
+	}
+}	
+function reEnable()
+{
+	return true;
+}
+document.onkeydown = disableEnterKey;
+document.onselectstart = disable_copy_ie;
+if(navigator.userAgent.indexOf('MSIE')==-1)
+{
+	document.onmousedown = disable_copy;
+	document.onclick = reEnable;
+}
+function disableSelection(target)
+{
+    //For IE This code will work
+    if (typeof target.onselectstart!="undefined")
+    target.onselectstart = disable_copy_ie;
+    
+    //For Firefox This code will work
+    else if (typeof target.style.MozUserSelect!="undefined")
+    {target.style.MozUserSelect="none";}
+    
+    //All other  (ie: Opera) This code will work
+    else
+    target.onmousedown=function(){return false}
+    target.style.cursor = "default";
+}
+//Calling the JS function directly just after body load
+window.onload = function(){disableSelection(document.body);};
+
+//////////////////special for safari Start////////////////
+var onlongtouch;
+var timer;
+var touchduration = 1000; //length of time we want the user to touch before we do something
+
+var elemtype = "";
+function touchstart(e) {
+	var e = e || window.event;
+  // also there is no e.target property in IE.
+  // instead IE uses window.event.srcElement
+  	var target = e.target || e.srcElement;
+	
+	elemtype = window.event.srcElement.nodeName;
+	
+	elemtype = elemtype.toUpperCase();
+	
+	if(!wccp_pro_is_passive()) e.preventDefault();
+	if (!timer) {
+		timer = setTimeout(onlongtouch, touchduration);
+	}
+}
+
+function touchend() {
+    //stops short touches from firing the event
+    if (timer) {
+        clearTimeout(timer);
+        timer = null;
+    }
+	onlongtouch();
+}
+
+onlongtouch = function(e) { //this will clear the current selection if anything selected
+	
+	if (elemtype != "TEXT" && elemtype != "TEXTAREA" && elemtype != "INPUT" && elemtype != "PASSWORD" && elemtype != "SELECT" && elemtype != "EMBED" && elemtype != "OPTION")	
+	{
+		if (window.getSelection) {
+			if (window.getSelection().empty) {  // Chrome
+			window.getSelection().empty();
+			} else if (window.getSelection().removeAllRanges) {  // Firefox
+			window.getSelection().removeAllRanges();
+			}
+		} else if (document.selection) {  // IE?
+			document.selection.empty();
+		}
+		return false;
+	}
+};
+
+document.addEventListener("DOMContentLoaded", function(event) { 
+    window.addEventListener("touchstart", touchstart, false);
+    window.addEventListener("touchend", touchend, false);
+});
+
+function wccp_pro_is_passive() {
+
+  var cold = false,
+  hike = function() {};
+
+  try {
+	  const object1 = {};
+  var aid = Object.defineProperty(object1, 'passive', {
+  get() {cold = true}
+  });
+  window.addEventListener('test', hike, aid);
+  window.removeEventListener('test', hike, aid);
+  } catch (e) {}
+
+  return cold;
+}
+/*special for safari End*/
+</script><script id="wpcp_disable_Right_Click" type="text/javascript">
+document.ondragstart = function() { return false;}
+	function nocontext(e) {
+	   return false;
+	}
+	document.oncontextmenu = nocontext;
+</script><!-- Global site tag (gtag.js) - Google Analytics --><script async src="https://www.googletagmanager.com/gtag/js?id=UA-139696701-1"></script><script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-139696701-1');
+</script><meta name="google-site-verification" content="mAq_Nb78UKhXaX8lMVK3ZsP0zvVI50VR3JzLZMnuMsE" />
+	<link href="https://teerresult.in/wp-content/uploads/2020/08/cropped-teerresult-favicon-e1597898018298-32x32.png" rel="icon" sizes="32x32" />
+	<link href="https://teerresult.in/wp-content/uploads/2020/08/cropped-teerresult-favicon-e1597898018298-192x192.png" rel="icon" sizes="192x192" />
+	<link href="https://teerresult.in/wp-content/uploads/2020/08/cropped-teerresult-favicon-e1597898018298-180x180.png" rel="apple-touch-icon-precomposed" /><meta name="msapplication-TileImage" content="https://teerresult.in/wp-content/uploads/2020/08/cropped-teerresult-favicon-e1597898018298-270x270.png" />
+	<style id="wp-custom-css" type="text/css">.overlay-loader {
+	display: block;
+	margin: auto;
+	width: 97px;
+	height: 97px;
+	position: relative;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+.loader {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	width: 97px;
+	height: 97px;
+	animation-name: rotateAnim;
+		-o-animation-name: rotateAnim;
+		-ms-animation-name: rotateAnim;
+		-webkit-animation-name: rotateAnim;
+		-moz-animation-name: rotateAnim;
+	animation-duration: 0.4s;
+		-o-animation-duration: 0.4s;
+		-ms-animation-duration: 0.4s;
+		-webkit-animation-duration: 0.4s;
+		-moz-animation-duration: 0.4s;
+	animation-iteration-count: infinite;
+		-o-animation-iteration-count: infinite;
+		-ms-animation-iteration-count: infinite;
+		-webkit-animation-iteration-count: infinite;
+		-moz-animation-iteration-count: infinite;
+	animation-timing-function: linear;
+		-o-animation-timing-function: linear;
+		-ms-animation-timing-function: linear;
+		-webkit-animation-timing-function: linear;
+		-moz-animation-timing-function: linear;
+}
+.loader div {
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	border: 1px solid rgba(105,255,255,0.78);
+	position: absolute;
+	top: 2px;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+}
+.loader div:nth-child(odd) {
+	border-top: none;
+	border-left: none;
+}
+.loader div:nth-child(even) {
+	border-bottom: none;
+	border-right: none;
+}
+.loader div:nth-child(2) {
+	border-width: 2px;
+	left: 0px;
+	top: -4px;
+	width: 12px;
+	height: 12px;
+}
+.loader div:nth-child(3) {
+	border-width: 2px;
+	left: -1px;
+	top: 3px;
+	width: 18px;
+	height: 18px;
+}
+.loader div:nth-child(4) {
+	border-width: 3px;
+	left: -1px;
+	top: -4px;
+	width: 23px;
+	height: 23px;
+}
+.loader div:nth-child(5) {
+	border-width: 3px;
+	left: -1px;
+	top: 4px;
+	width: 31px;
+	height: 31px;
+}
+.loader div:nth-child(6) {
+	border-width: 4px;
+	left: 0px;
+	top: -4px;
+	width: 39px;
+	height: 39px;
+}
+.loader div:nth-child(7) {
+	border-width: 4px;
+	left: 0px;
+	top: 6px;
+	width: 49px;
+	height: 49px;
+}
+
+
+@keyframes rotateAnim {
+	from {
+		transform: rotate(360deg);
+	}
+	to {
+		transform: rotate(0deg);
+	}
+}
+
+@-o-keyframes rotateAnim {
+	from {
+		-o-transform: rotate(360deg);
+	}
+	to {
+		-o-transform: rotate(0deg);
+	}
+}
+
+@-ms-keyframes rotateAnim {
+	from {
+		-ms-transform: rotate(360deg);
+	}
+	to {
+		-ms-transform: rotate(0deg);
+	}
+}
+
+@-webkit-keyframes rotateAnim {
+	from {
+		-webkit-transform: rotate(360deg);
+	}
+	to {
+		-webkit-transform: rotate(0deg);
+	}
+}
+
+@-moz-keyframes rotateAnim {
+	from {
+		-moz-transform: rotate(360deg);
+	}
+	to {
+		-moz-transform: rotate(0deg);
+	}
+}
+	</style>
+	<script type="text/javascript">var ezouid = "1";</script>
+	<base href="https://teerresult.in/khanapara-teer-previous-results/" /><script type='text/javascript'>
+var ezoTemplate = 'old_site_noads';
+if(typeof ezouid == 'undefined')
+{
+    var ezouid = 'none';
+}
+var ezoFormfactor = '1';
+var ezo_elements_to_check = Array();
+</script><!-- START EZHEAD --><script data-ezscrex="false" type='text/javascript'>
+var soc_app_id = '0';
+var did = 212531;
+var ezdomain = 'teerresult.in';
+var ezoicSearchable = 1;
+</script><!--{jquery}--><!-- END EZHEAD --><script data-ezscrex="false" type="text/javascript" data-cfasync="false">var _ezaq = {"ad_cache_level":0,"ad_lazyload_version":0,"city":"Guwahati","country":"IN","days_since_last_visit":0,"domain_id":212531,"engaged_time_visit":51,"ezcache_level":0,"ezcache_skip_code":0,"form_factor_id":1,"framework_id":1,"is_return_visitor":true,"is_sitespeed":0,"last_page_load":"1614159436341","last_pageview_id":"e145c6a3-a32d-4673-5ceb-42088bed6fc3","lt_cache_level":0,"metro_code":0,"page_ad_positions":"","page_view_count":3,"page_view_id":"4e594f1b-928d-4303-70db-04f63ca5ad8d","position_selection_id":0,"postal_code":"781011","pv_event_count":0,"response_size_orig":139039,"response_time_orig":420,"serverid":"15.188.147.192:10583","state":"AS","t_epoch":1614159488,"template_id":120,"time_on_site_visit":63,"url":"https://teerresult.in/khanapara-teer-previous-results/","user_id":0,"word_count":1132,"worst_bad_word_level":0};var _ezExtraQueries = "&ez_orig=1";</script><script data-ezscrex='false' data-cfasync='false' type="text/javascript" src="/detroitchicago/rochester.js?dcb=192-0&cb=2&v=9" async></script><script src="//www.ezojs.com/ezoic/ezd.js" defer async></script><script data-ezscrex='false' data-pagespeed-no-defer data-cfasync='false'>
+function create_ezolpl(pvID, rv) {
+    var d = new Date();
+    d.setTime(d.getTime() + (365*24*60*60*1000));
+    var expires = "expires="+d.toUTCString();
+    __ez.ck.setByCat("ezux_lpl_212531=" + new Date().getTime() + "|" + pvID + "|" + rv + "; " + expires, 3);
+}
+function attach_ezolpl(pvID, rv) {
+    if (document.readyState === "complete") {
+        create_ezolpl(pvID, rv);
+    }
+    if(window.attachEvent) {
+        window.attachEvent("onload", create_ezolpl, pvID, rv);
+    } else {
+        if(window.onload) {
+            var curronload = window.onload;
+            var newonload = function(evt) {
+                curronload(evt);
+                create_ezolpl(pvID, rv);
+            };
+            window.onload = newonload;
+        } else {
+            window.onload = create_ezolpl.bind(null, pvID, rv);
+        }
+    }
+}
+
+__ez.queue.addFunc("attach_ezolpl", "attach_ezolpl", ["4e594f1b-928d-4303-70db-04f63ca5ad8d", "true"], false, ['/detroitchicago/boise.js'], true, false, false, false);
+</script>
+</head>
+<body class="page-template-default page page-id-698 wp-custom-logo unselectable ast-header-break-point ast-separate-container ast-right-sidebar astra-2.4.3 ast-header-custom-item-inside ast-single-post ast-mobile-inherit-site-logo ast-inherit-site-logo-transparent ast-above-mobile-menu-align-stack ast-default-menu-enable ast-default-above-menu-enable ast-default-below-menu-enable ast-full-width-layout ast-inherit-site-logo-sticky ast-normal-title-enabled elementor-default astra-addon-2.4.1" data-rsssl="1" itemscope="itemscope" itemtype="https://schema.org/WebPage">
+<div class="hfeed site" id="page"><a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+<header class="site-header ast-primary-submenu-animation-fade header-main-layout-1 ast-primary-menu-enabled ast-logo-title-inline ast-hide-custom-menu-mobile ast-menu-toggle-icon ast-mobile-header-inline ast-above-header-mobile-stack ast-below-header-mobile-stack" id="masthead" itemscope="itemscope" itemtype="https://schema.org/WPHeader">
+<div class="main-header-bar-wrap">
+<div class="main-header-bar">
+<div class="ast-container">
+<div class="ast-flex main-header-container">
+<div class="site-branding">
+<div class="ast-site-identity" itemscope="itemscope" itemtype="https://schema.org/Organization"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</header>
+
+<div class="site-content" id="content">
+<div class="ast-container">
+<div class="content-area primary" id="primary">
+<main class="site-main" id="main">
+<article class="post-698 page type-page status-publish ast-article-single" id="post-698" itemscope="itemscope" itemtype="https://schema.org/CreativeWork">
+<div class="entry-content clear" itemprop="text">
+<h2 class="tablepress-table-name tablepress-table-name-id-10">Mumbai Teer &nbsp;Day Night&nbsp;Previous/Old Results</h2>
+
+<table class="tablepress tablepress-id-10" id="tablepress-10">
+	<thead>
+		<tr class="row-1 odd">
+			<th class="column-1">Date</th>
+			<th class="column-2">FR</th>
+			<th class="column-3">SR</th>
+		</tr>
+	</thead>
+	<tbody class="row-hover">
+		<tr class="row-2 even">
+			<td class="column-1" colspan="3"><b>January 2019</b></td>
+		</tr>
+		<tr class="row-3 odd">
+			<td class="column-1">23/02/2021</td>
+			<td class="column-2">88</td>
+			<td class="column-3">42</td>
+		</tr>
+		<tr class="row-4 even">
+			<td class="column-1">22/02/2021</td>
+			<td class="column-2">22</td>
+			<td class="column-3">31</td>
+		</tr>
+		<tr class="row-5 odd">
+			<td class="column-1">21/02/2021</td>
+			<td class="column-2">OFF</td>
+			<td class="column-3">OFF</td>
+		</tr>
+		<tr class="row-6 even">
+			<td class="column-1">20/02/2021</td>
+			<td class="column-2">95</td>
+			<td class="column-3">18</td>
+		</tr>
+		<tr class="row-7 odd">
+			<td class="column-1">19/02/2021</td>
+			<td class="column-2">57</td>
+			<td class="column-3">66</td>
+		</tr>
+		<tr class="row-8 even">
+			<td class="column-1">18/02/2021</td>
+			<td class="column-2">01</td>
+			<td class="column-3">48</td>
+		</tr>
+		<tr class="row-9 odd">
+			<td class="column-1">17/02/2021</td>
+			<td class="column-2">59</td>
+			<td class="column-3">47</td>
+		</tr>
+		<tr class="row-10 even">
+			<td class="column-1">16/02/2021</td>
+			<td class="column-2">14</td>
+			<td class="column-3">08</td>
+		</tr>
+		<tr class="row-11 odd">
+			<td class="column-1">15/02/2021</td>
+			<td class="column-2">97</td>
+			<td class="column-3">39</td>
+		</tr>
+		<tr class="row-12 even">
+			<td class="column-1">14/02/2019</td>
+			<td class="column-2">OFF</td>
+			<td class="column-3">OFF</td>
+		</tr>
+		<tr class="row-13 odd">
+			<td class="column-1">13/02/2019</td>
+			<td class="column-2">17</td>
+			<td class="column-3">49</td>
+		</tr>
+		<tr class="row-14 even">
+			<td class="column-1">12/02/2019</td>
+			<td class="column-2">18</td>
+			<td class="column-3">93</td>
+		</tr>
+		<tr class="row-15 odd">
+			<td class="column-1">11/02/2019</td>
+			<td class="column-2">32</td>
+			<td class="column-3">21</td>
+		</tr>
+		<tr class="row-16 even">
+			<td class="column-1">10/02/2019</td>
+			<td class="column-2">48</td>
+			<td class="column-3">52</td>
+		</tr>
+		<tr class="row-17 odd">
+			<td class="column-1">09/02/2019</td>
+			<td class="column-2">14</td>
+			<td class="column-3">15</td>
+		</tr>
+		<tr class="row-18 even">
+			<td class="column-1">08/02/2019</td>
+			<td class="column-2">45</td>
+			<td class="column-3">70</td>
+		</tr>
+		<tr class="row-19 odd">
+			<td class="column-1">07/02/2019</td>
+			<td class="column-2">OFF</td>
+			<td class="column-3">OFF</td>
+		</tr>
+		<tr class="row-20 even">
+			<td class="column-1">06/02/2019</td>
+			<td class="column-2">12</td>
+			<td class="column-3">62</td>
+		</tr>
+		<tr class="row-21 odd">
+			<td class="column-1">05/02/2019</td>
+			<td class="column-2">76</td>
+			<td class="column-3">61</td>
+		</tr>
+		<tr class="row-22 even">
+			<td class="column-1">04/02/2019</td>
+			<td class="column-2">05</td>
+			<td class="column-3">03</td>
+		</tr>
+		<tr class="row-23 odd">
+			<td class="column-1">03/02/2019</td>
+			<td class="column-2">36</td>
+			<td class="column-3">66</td>
+		</tr>
+		<tr class="row-24 even">
+			<td class="column-1">02/02/2019</td>
+			<td class="column-2">58</td>
+			<td class="column-3">32</td>
+		</tr>
+		<tr class="row-25 odd">
+			<td class="column-1">01/02/2019</td>
+			<td class="column-2">18</td>
+			<td class="column-3">07</td>
+		</tr>
+		<tr class="row-26 even">
+			<td class="column-1" colspan="3"><b>January 2021</b></td>
+		</tr>
+		<tr class="row-27 odd">
+			<td class="column-1">31/01/2021</td>
+			<td class="column-2">OFF</td>
+			<td class="column-3">OFF</td>
+		</tr>
+		<tr class="row-28 even">
+			<td class="column-1">30/01/2021</td>
+			<td class="column-2">68</td>
+			<td class="column-3">57</td>
+		</tr>
+		<tr class="row-29 odd">
+			<td class="column-1">29/01/2021</td>
+			<td class="column-2">92</td>
+			<td class="column-3">75</td>
+		</tr>
+		<tr class="row-30 even">
+			<td class="column-1">28/01/2021</td>
+			<td class="column-2">62</td>
+			<td class="column-3">60</td>
+		</tr>
+		<tr class="row-31 odd">
+			<td class="column-1">27/01/2021</td>
+			<td class="column-2">70</td>
+			<td class="column-3">10</td>
+		</tr>
+		<tr class="row-32 even">
+			<td class="column-1">26/01/2021</td>
+			<td class="column-2">OFF</td>
+			<td class="column-3">OFF</td>
+		</tr>
+		<tr class="row-33 odd">
+			<td class="column-1">25/01/2021</td>
+			<td class="column-2">36</td>
+			<td class="column-3">73</td>
+		</tr>
+		<tr class="row-34 even">
+			<td class="column-1">24/01/2021</td>
+			<td class="column-2">OFF</td>
+			<td class="column-3">OFF</td>
+		</tr>
+		<tr class="row-35 odd">
+			<td class="column-1">23/01/2021</td>
+			<td class="column-2">55</td>
+			<td class="column-3">69</td>
+		</tr>
+		<tr class="row-36 even">
+			<td class="column-1">22/01/2021</td>
+			<td class="column-2">17</td>
+			<td class="column-3">30</td>
+		</tr>
+		<tr class="row-37 odd">
+			<td class="column-1">21/01/2021</td>
+			<td class="column-2">99</td>
+			<td class="column-3">81</td>
+		</tr>
+		<tr class="row-38 even">
+			<td class="column-1">20/01/2021</td>
+			<td class="column-2">93</td>
+			<td class="column-3">22</td>
+		</tr>
+		<tr class="row-39 odd">
+			<td class="column-1">19/01/2021</td>
+			<td class="column-2">50</td>
+			<td class="column-3">48</td>
+		</tr>
+		<tr class="row-40 even">
+			<td class="column-1">18/01/2021</td>
+			<td class="column-2">59</td>
+			<td class="column-3">31</td>
+		</tr>
+		<tr class="row-41 odd">
+			<td class="column-1">17/01/2021</td>
+			<td class="column-2">OFF</td>
+			<td class="column-3">OFF</td>
+		</tr>
+		<tr class="row-42 even">
+			<td class="column-1">16/01/2021</td>
+			<td class="column-2">45</td>
+			<td class="column-3">16</td>
+		</tr>
+		<tr class="row-43 odd">
+			<td class="column-1">15/01/2021</td>
+			<td class="column-2">76</td>
+			<td class="column-3">18</td>
+		</tr>
+		<tr class="row-44 even">
+			<td class="column-1">14/01/2021</td>
+			<td class="column-2">86</td>
+			<td class="column-3">44</td>
+		</tr>
+		<tr class="row-45 odd">
+			<td class="column-1">13/01/2021</td>
+			<td class="column-2">70</td>
+			<td class="column-3">61</td>
+		</tr>
+		<tr class="row-46 even">
+			<td class="column-1">12/01/2021</td>
+			<td class="column-2">32</td>
+			<td class="column-3">85</td>
+		</tr>
+		<tr class="row-47 odd">
+			<td class="column-1">11/01/2021</td>
+			<td class="column-2">92</td>
+			<td class="column-3">48</td>
+		</tr>
+		<tr class="row-48 even">
+			<td class="column-1">10/01/2021</td>
+			<td class="column-2">OFF</td>
+			<td class="column-3">OFF</td>
+		</tr>
+		<tr class="row-49 odd">
+			<td class="column-1">09/01/2021</td>
+			<td class="column-2">97</td>
+			<td class="column-3">56</td>
+		</tr>
+		<tr class="row-50 even">
+			<td class="column-1">08/01/2021</td>
+			<td class="column-2">37</td>
+			<td class="column-3">52</td>
+		</tr>
+		<tr class="row-51 odd">
+			<td class="column-1">07/01/2021</td>
+			<td class="column-2">55</td>
+			<td class="column-3">36</td>
+		</tr>
+		<tr class="row-52 even">
+			<td class="column-1">06/01/2021</td>
+			<td class="column-2">87</td>
+			<td class="column-3">44</td>
+		</tr>
+		<tr class="row-53 odd">
+			<td class="column-1">05/01/2021</td>
+			<td class="column-2">99</td>
+			<td class="column-3">41</td>
+		</tr>
+		<tr class="row-54 even">
+			<td class="column-1">04/01/2021</td>
+			<td class="column-2">04</td>
+			<td class="column-3">75</td>
+		</tr>
+		<tr class="row-55 odd">
+			<td class="column-1">03/01/2021</td>
+			<td class="column-2">OFF</td>
+			<td class="column-3">OFF</td>
+		</tr>
+		<tr class="row-56 even">
+			<td class="column-1">02/01/2021</td>
+			<td class="column-2">81</td>
+			<td class="column-3">89</td>
+		</tr>
+		<tr class="row-57 odd">
+			<td class="column-1">01/01/2021</td>
+			<td class="column-2">OFF</td>
+			<td class="column-3">OFF</td>
+		</tr>
+		<tr class="row-58 even">
+			<td class="column-1" colspan="3"><b>December 2020</b></td>
+		</tr>
+		<tr class="row-59 odd">
+			<td class="column-1">31/12/2020</td>
+			<td class="column-2">93</td>
+			<td class="column-3">42</td>
+		</tr>
+		<tr class="row-60 even">
+			<td class="column-1">30/12/2020</td>
+			<td class="column-2">46</td>
+			<td class="column-3">14</td>
+		</tr>
+		<tr class="row-61 odd">
+			<td class="column-1">29/12/2020</td>
+			<td class="column-2">87</td>
+			<td class="column-3">83</td>
+		</tr>
+		<tr class="row-62 even">
+			<td class="column-1">28/12/2020</td>
+			<td class="column-2">24</td>
+			<td class="column-3">17</td>
+		</tr>
+		<tr class="row-63 odd">
+			<td class="column-1">27/12/2020</td>
+			<td class="column-2">OFF</td>
+			<td class="column-3">OFF</td>
+		</tr>
+		<tr class="row-64 even">
+			<td class="column-1">26/12/2020</td>
+			<td class="column-2">32</td>
+			<td class="column-3">73</td>
+		</tr>
+		<tr class="row-65 odd">
+			<td class="column-1">25/12/2020</td>
+			<td class="column-2">OFF</td>
+			<td class="column-3">OFF</td>
+		</tr>
+		<tr class="row-66 even">
+			<td class="column-1">24/12/2020</td>
+			<td class="column-2">74</td>
+			<td class="column-3">20</td>
+		</tr>
+		<tr class="row-67 odd">
+			<td class="column-1">23/12/2020</td>
+			<td class="column-2">70</td>
+			<td class="column-3">89</td>
+		</tr>
+		<tr class="row-68 even">
+			<td class="column-1">22/12/2020</td>
+			<td class="column-2">66</td>
+			<td class="column-3">70</td>
+		</tr>
+		<tr class="row-69 odd">
+			<td class="column-1">21/12/2020</td>
+			<td class="column-2">90</td>
+			<td class="column-3">61</td>
+		</tr>
+		<tr class="row-70 even">
+			<td class="column-1">20/12/2020</td>
+			<td class="column-2">OFF</td>
+			<td class="column-3">OFF</td>
+		</tr>
+		<tr class="row-71 odd">
+			<td class="column-1">19/12/2020</td>
+			<td class="column-2">22</td>
+			<td class="column-3">23</td>
+		</tr>
+		<tr class="row-72 even">
+			<td class="column-1">18/12/2020</td>
+			<td class="column-2">20</td>
+			<td class="column-3">87</td>
+		</tr>
+		<tr class="row-73 odd">
+			<td class="column-1">17/12/2020</td>
+			<td class="column-2">99</td>
+			<td class="column-3">30</td>
+		</tr>
+		<tr class="row-74 even">
+			<td class="column-1">16/12/2020</td>
+			<td class="column-2">53</td>
+			<td class="column-3">27</td>
+		</tr>
+		<tr class="row-75 odd">
+			<td class="column-1">15/12/2020</td>
+			<td class="column-2">44</td>
+			<td class="column-3">11</td>
+		</tr>
+		<tr class="row-76 even">
+			<td class="column-1">14/12/2020</td>
+			<td class="column-2">49</td>
+			<td class="column-3">66</td>
+		</tr>
+		<tr class="row-77 odd">
+			<td class="column-1">13/12/2020</td>
+			<td class="column-2">OFF</td>
+			<td class="column-3">OFF</td>
+		</tr>
+		<tr class="row-78 even">
+			<td class="column-1">12/12/2020</td>
+			<td class="column-2">47</td>
+			<td class="column-3">32</td>
+		</tr>
+		<tr class="row-79 odd">
+			<td class="column-1">11/12/2020</td>
+			<td class="column-2">41</td>
+			<td class="column-3">24</td>
+		</tr>
+		<tr class="row-80 even">
+			<td class="column-1">10/12/2020</td>
+			<td class="column-2">71</td>
+			<td class="column-3">31</td>
+		</tr>
+		<tr class="row-81 odd">
+			<td class="column-1">09/12/2020</td>
+			<td class="column-2">17</td>
+			<td class="column-3">96</td>
+		</tr>
+		<tr class="row-82 even">
+			<td class="column-1">08/12/2020</td>
+			<td class="column-2">97</td>
+			<td class="column-3">37</td>
+		</tr>
+		<tr class="row-83 odd">
+			<td class="column-1">07/12/2020</td>
+			<td class="column-2">65</td>
+			<td class="column-3">62</td>
+		</tr>
+		<tr class="row-84 even">
+			<td class="column-1">06/12/2020</td>
+			<td class="column-2">OFF</td>
+			<td class="column-3">OFF</td>
+		</tr>
+		<tr class="row-85 odd">
+			<td class="column-1">05/12/2020</td>
+			<td class="column-2">18</td>
+			<td class="column-3">30</td>
+		</tr>
+		<tr class="row-86 even">
+			<td class="column-1">04/12/2020</td>
+			<td class="column-2">38</td>
+			<td class="column-3">53</td>
+		</tr>
+		<tr class="row-87 odd">
+			<td class="column-1">03/12/2020</td>
+			<td class="column-2">01</td>
+			<td class="column-3">23</td>
+		</tr>
+		<tr class="row-88 even">
+			<td class="column-1">02/12/2020</td>
+			<td class="column-2">76</td>
+			<td class="column-3">61</td>
+		</tr>
+		<tr class="row-89 odd">
+			<td class="column-1">01/12/2020</td>
+			<td class="column-2">22</td>
+			<td class="column-3">88</td>
+		</tr>
+		<tr class="row-90 even">
+			<td class="column-1" colspan="3"><b>November 2020</b></td>
+		</tr>
+		<tr class="row-91 odd">
+			<td class="column-1">30/11/2020</td>
+			<td class="column-2">75</td>
+			<td class="column-3">69</td>
+		</tr>
+		<tr class="row-92 even">
+			<td class="column-1">29/11/2020</td>
+			<td class="column-2">OFF</td>
+			<td class="column-3">OFF</td>
+		</tr>
+		<tr class="row-93 odd">
+			<td class="column-1">28/11/2020</td>
+			<td class="column-2">04</td>
+			<td class="column-3">04</td>
+		</tr>
+		<tr class="row-94 even">
+			<td class="column-1">27/11/2020</td>
+			<td class="column-2">55</td>
+			<td class="column-3">48</td>
+		</tr>
+		<tr class="row-95 odd">
+			<td class="column-1">26/11/2020</td>
+			<td class="column-2">03</td>
+			<td class="column-3">54</td>
+		</tr>
+		<tr class="row-96 even">
+			<td class="column-1">25/11/2020</td>
+			<td class="column-2">71</td>
+			<td class="column-3">78</td>
+		</tr>
+		<tr class="row-97 odd">
+			<td class="column-1">24/11/2020</td>
+			<td class="column-2">38</td>
+			<td class="column-3">63</td>
+		</tr>
+		<tr class="row-98 even">
+			<td class="column-1">23/11/2020</td>
+			<td class="column-2">61</td>
+			<td class="column-3">43</td>
+		</tr>
+		<tr class="row-99 odd">
+			<td class="column-1">22/11/2020</td>
+			<td class="column-2">OFF</td>
+			<td class="column-3">OFF</td>
+		</tr>
+		<tr class="row-100 even">
+			<td class="column-1">21/11/2020</td>
+			<td class="column-2">19</td>
+			<td class="column-3">71</td>
+		</tr>
+		<tr class="row-101 odd">
+			<td class="column-1">20/11/2020</td>
+			<td class="column-2">83</td>
+			<td class="column-3">65</td>
+		</tr>
+		<tr class="row-102 even">
+			<td class="column-1">19/11/2020</td>
+			<td class="column-2">74</td>
+			<td class="column-3">56</td>
+		</tr>
+		<tr class="row-103 odd">
+			<td class="column-1">18/11/2020</td>
+			<td class="column-2">47</td>
+			<td class="column-3">38</td>
+		</tr>
+		<tr class="row-104 even">
+			<td class="column-1">17/11/2020</td>
+			<td class="column-2">61</td>
+			<td class="column-3">81</td>
+		</tr>
+		<tr class="row-105 odd">
+			<td class="column-1">16/11/2020</td>
+			<td class="column-2">68</td>
+			<td class="column-3">54</td>
+		</tr>
+		<tr class="row-106 even">
+			<td class="column-1">15/11/2020</td>
+			<td class="column-2">OFF</td>
+			<td class="column-3">OFF</td>
+		</tr>
+		<tr class="row-107 odd">
+			<td class="column-1">14/11/2020</td>
+			<td class="column-2">87</td>
+			<td class="column-3">48</td>
+		</tr>
+		<tr class="row-108 even">
+			<td class="column-1">13/11/2020</td>
+			<td class="column-2">05</td>
+			<td class="column-3">88</td>
+		</tr>
+		<tr class="row-109 odd">
+			<td class="column-1">12/11/2020</td>
+			<td class="column-2">09</td>
+			<td class="column-3">10</td>
+		</tr>
+		<tr class="row-110 even">
+			<td class="column-1">11/11/2020</td>
+			<td class="column-2">95</td>
+			<td class="column-3">26</td>
+		</tr>
+		<tr class="row-111 odd">
+			<td class="column-1">10/11/2020</td>
+			<td class="column-2">03</td>
+			<td class="column-3">28</td>
+		</tr>
+		<tr class="row-112 even">
+			<td class="column-1">09/11/2020</td>
+			<td class="column-2">23</td>
+			<td class="column-3">64</td>
+		</tr>
+		<tr class="row-113 odd">
+			<td class="column-1">08/11/2020</td>
+			<td class="column-2">OFF</td>
+			<td class="column-3">OFF</td>
+		</tr>
+		<tr class="row-114 even">
+			<td class="column-1">07/11/2020</td>
+			<td class="column-2">84</td>
+			<td class="column-3">60</td>
+		</tr>
+		<tr class="row-115 odd">
+			<td class="column-1">06/11/2020</td>
+			<td class="column-2">79</td>
+			<td class="column-3">38</td>
+		</tr>
+		<tr class="row-116 even">
+			<td class="column-1">05/11/2020</td>
+			<td class="column-2">92</td>
+			<td class="column-3">83</td>
+		</tr>
+		<tr class="row-117 odd">
+			<td class="column-1">04/11/2020</td>
+			<td class="column-2">56</td>
+			<td class="column-3">86</td>
+		</tr>
+		<tr class="row-118 even">
+			<td class="column-1">03/11/2020</td>
+			<td class="column-2">36</td>
+			<td class="column-3">23</td>
+		</tr>
+		<tr class="row-119 odd">
+			<td class="column-1">02/11/2020</td>
+			<td class="column-2">57</td>
+			<td class="column-3">96</td>
+		</tr>
+		<tr class="row-120 even">
+			<td class="column-1">01/11/2020</td>
+			<td class="column-2">OFF</td>
+			<td class="column-3">OFF</td>
+		</tr>
+		<tr class="row-121 odd">
+			<td class="column-1" colspan="3"><b>October 2020</b></td>
+		</tr>
+		<tr class="row-122 even">
+			<td class="column-1">31/10/2020</td>
+			<td class="column-2">92</td>
+			<td class="column-3">29</td>
+		</tr>
+		<tr class="row-123 odd">
+			<td class="column-1">30/10/2020</td>
+			<td class="column-2">20</td>
+			<td class="column-3">11</td>
+		</tr>
+		<tr class="row-124 even">
+			<td class="column-1">29/10/2020</td>
+			<td class="column-2">73</td>
+			<td class="column-3">22</td>
+		</tr>
+		<tr class="row-125 odd">
+			<td class="column-1">28/10/2020</td>
+			<td class="column-2">86</td>
+			<td class="column-3">90</td>
+		</tr>
+		<tr class="row-126 even">
+			<td class="column-1">27/10/2020</td>
+			<td class="column-2">28</td>
+			<td class="column-3">20</td>
+		</tr>
+		<tr class="row-127 odd">
+			<td class="column-1">26/10/2020</td>
+			<td class="column-2">OFF</td>
+			<td class="column-3">OFF</td>
+		</tr>
+		<tr class="row-128 even">
+			<td class="column-1">25/10/2020</td>
+			<td class="column-2">OFF</td>
+			<td class="column-3">OFF</td>
+		</tr>
+		<tr class="row-129 odd">
+			<td class="column-1">24/10/2020</td>
+			<td class="column-2">57</td>
+			<td class="column-3">39</td>
+		</tr>
+		<tr class="row-130 even">
+			<td class="column-1">23/10/2020</td>
+			<td class="column-2">53</td>
+			<td class="column-3">73</td>
+		</tr>
+		<tr class="row-131 odd">
+			<td class="column-1">22/10/2020</td>
+			<td class="column-2">63</td>
+			<td class="column-3">48</td>
+		</tr>
+		<tr class="row-132 even">
+			<td class="column-1">21/10/2020</td>
+			<td class="column-2">69</td>
+			<td class="column-3">71</td>
+		</tr>
+		<tr class="row-133 odd">
+			<td class="column-1">20/10/2020</td>
+			<td class="column-2">01</td>
+			<td class="column-3">11</td>
+		</tr>
+		<tr class="row-134 even">
+			<td class="column-1">19/10/2020</td>
+			<td class="column-2">36</td>
+			<td class="column-3">28</td>
+		</tr>
+		<tr class="row-135 odd">
+			<td class="column-1">18/10/2020</td>
+			<td class="column-2">OFF</td>
+			<td class="column-3">OFF</td>
+		</tr>
+		<tr class="row-136 even">
+			<td class="column-1">17/10/2020</td>
+			<td class="column-2">60</td>
+			<td class="column-3">20</td>
+		</tr>
+		<tr class="row-137 odd">
+			<td class="column-1">16/10/2020</td>
+			<td class="column-2">29</td>
+			<td class="column-3">30</td>
+		</tr>
+		<tr class="row-138 even">
+			<td class="column-1">15/10/2020</td>
+			<td class="column-2">48</td>
+			<td class="column-3">58</td>
+		</tr>
+		<tr class="row-139 odd">
+			<td class="column-1">14/10/2020</td>
+			<td class="column-2">41</td>
+			<td class="column-3">63</td>
+		</tr>
+		<tr class="row-140 even">
+			<td class="column-1">13/10/2020</td>
+			<td class="column-2">14</td>
+			<td class="column-3">34</td>
+		</tr>
+		<tr class="row-141 odd">
+			<td class="column-1">12/10/2020</td>
+			<td class="column-2">46</td>
+			<td class="column-3">78</td>
+		</tr>
+		<tr class="row-142 even">
+			<td class="column-1">11/10/2020</td>
+			<td class="column-2">OFF</td>
+			<td class="column-3">OFF</td>
+		</tr>
+		<tr class="row-143 odd">
+			<td class="column-1">10/10/2020</td>
+			<td class="column-2">64</td>
+			<td class="column-3">31</td>
+		</tr>
+		<tr class="row-144 even">
+			<td class="column-1">09/10/2020</td>
+			<td class="column-2">19</td>
+			<td class="column-3">10</td>
+		</tr>
+		<tr class="row-145 odd">
+			<td class="column-1">08/10/2020</td>
+			<td class="column-2">77</td>
+			<td class="column-3">71</td>
+		</tr>
+		<tr class="row-146 even">
+			<td class="column-1">07/10/2020</td>
+			<td class="column-2">83</td>
+			<td class="column-3">61</td>
+		</tr>
+		<tr class="row-147 odd">
+			<td class="column-1">06/10/2020</td>
+			<td class="column-2">20</td>
+			<td class="column-3">13</td>
+		</tr>
+		<tr class="row-148 even">
+			<td class="column-1">05/10/2020</td>
+			<td class="column-2">79</td>
+			<td class="column-3">76</td>
+		</tr>
+		<tr class="row-149 odd">
+			<td class="column-1">04/10/2020</td>
+			<td class="column-2">OFF</td>
+			<td class="column-3">OFF</td>
+		</tr>
+		<tr class="row-150 even">
+			<td class="column-1">03/10/2020</td>
+			<td class="column-2">22</td>
+			<td class="column-3">59</td>
+		</tr>
+		<tr class="row-151 odd">
+			<td class="column-1">02/10/2020</td>
+			<td class="column-2">00</td>
+			<td class="column-3">68</td>
+		</tr>
+		<tr class="row-152 even">
+			<td class="column-1">01/10/2020</td>
+			<td class="column-2">84</td>
+			<td class="column-3">10</td>
+		</tr>
+		<tr class="row-153 odd">
+			<td class="column-1" colspan="3"><b>September 2020</b></td>
+		</tr>
+		<tr class="row-154 even">
+			<td class="column-1">30/09/2020</td>
+			<td class="column-2">86</td>
+			<td class="column-3">27</td>
+		</tr>
+		<tr class="row-155 odd">
+			<td class="column-1">29/09/2020</td>
+			<td class="column-2">26</td>
+			<td class="column-3">81</td>
+		</tr>
+		<tr class="row-156 even">
+			<td class="column-1">28/09/2020</td>
+			<td class="column-2">58</td>
+			<td class="column-3">01</td>
+		</tr>
+		<tr class="row-157 odd">
+			<td class="column-1">27/09/2020</td>
+			<td class="column-2">OFF</td>
+			<td class="column-3">OFF</td>
+		</tr>
+		<tr class="row-158 even">
+			<td class="column-1">26/09/2020</td>
+			<td class="column-2">19</td>
+			<td class="column-3">14</td>
+		</tr>
+		<tr class="row-159 odd">
+			<td class="column-1">25/09/2020</td>
+			<td class="column-2">55</td>
+			<td class="column-3">42</td>
+		</tr>
+		<tr class="row-160 even">
+			<td class="column-1">24/09/2020</td>
+			<td class="column-2">02</td>
+			<td class="column-3">07</td>
+		</tr>
+		<tr class="row-161 odd">
+			<td class="column-1">23/09/2020</td>
+			<td class="column-2">76</td>
+			<td class="column-3">49</td>
+		</tr>
+		<tr class="row-162 even">
+			<td class="column-1">22/09/2020</td>
+			<td class="column-2">09</td>
+			<td class="column-3">20</td>
+		</tr>
+		<tr class="row-163 odd">
+			<td class="column-1">21/09/2020</td>
+			<td class="column-2">44</td>
+			<td class="column-3">78</td>
+		</tr>
+		<tr class="row-164 even">
+			<td class="column-1">20/09/2020</td>
+			<td class="column-2">OFF</td>
+			<td class="column-3">OFF</td>
+		</tr>
+		<tr class="row-165 odd">
+			<td class="column-1">19/09/2020</td>
+			<td class="column-2">00</td>
+			<td class="column-3">85</td>
+		</tr>
+		<tr class="row-166 even">
+			<td class="column-1">18/09/2020</td>
+			<td class="column-2">74</td>
+			<td class="column-3">13</td>
+		</tr>
+		<tr class="row-167 odd">
+			<td class="column-1">17/09/2020</td>
+			<td class="column-2">75</td>
+			<td class="column-3">24</td>
+		</tr>
+		<tr class="row-168 even">
+			<td class="column-1">16/09/2020</td>
+			<td class="column-2">03</td>
+			<td class="column-3">83</td>
+		</tr>
+		<tr class="row-169 odd">
+			<td class="column-1">15/09/2020</td>
+			<td class="column-2">31</td>
+			<td class="column-3">71</td>
+		</tr>
+		<tr class="row-170 even">
+			<td class="column-1">14/09/2020</td>
+			<td class="column-2">82</td>
+			<td class="column-3">54</td>
+		</tr>
+		<tr class="row-171 odd">
+			<td class="column-1">13/09/2020</td>
+			<td class="column-2">OFF</td>
+			<td class="column-3">OFF</td>
+		</tr>
+		<tr class="row-172 even">
+			<td class="column-1">12/09/2020</td>
+			<td class="column-2">00</td>
+			<td class="column-3">22</td>
+		</tr>
+		<tr class="row-173 odd">
+			<td class="column-1">11/09/2020</td>
+			<td class="column-2">81</td>
+			<td class="column-3">75</td>
+		</tr>
+		<tr class="row-174 even">
+			<td class="column-1">10/09/2020</td>
+			<td class="column-2">27</td>
+			<td class="column-3">61</td>
+		</tr>
+		<tr class="row-175 odd">
+			<td class="column-1">09/09/2020</td>
+			<td class="column-2">58</td>
+			<td class="column-3">57</td>
+		</tr>
+		<tr class="row-176 even">
+			<td class="column-1">08/09/2020</td>
+			<td class="column-2">55</td>
+			<td class="column-3">24</td>
+		</tr>
+		<tr class="row-177 odd">
+			<td class="column-1">07/09/2020</td>
+			<td class="column-2">93</td>
+			<td class="column-3">34</td>
+		</tr>
+		<tr class="row-178 even">
+			<td class="column-1">06/09/2020</td>
+			<td class="column-2">OFF</td>
+			<td class="column-3">OFF</td>
+		</tr>
+		<tr class="row-179 odd">
+			<td class="column-1">05/09/2020</td>
+			<td class="column-2">51</td>
+			<td class="column-3">46</td>
+		</tr>
+		<tr class="row-180 even">
+			<td class="column-1">04/09/2020</td>
+			<td class="column-2">59</td>
+			<td class="column-3">32</td>
+		</tr>
+		<tr class="row-181 odd">
+			<td class="column-1">03/09/2020</td>
+			<td class="column-2">11</td>
+			<td class="column-3">00</td>
+		</tr>
+		<tr class="row-182 even">
+			<td class="column-1">02/09/2020</td>
+			<td class="column-2">38</td>
+			<td class="column-3">59</td>
+		</tr>
+		<tr class="row-183 odd">
+			<td class="column-1">01/09/2020</td>
+			<td class="column-2">79</td>
+			<td class="column-3">19</td>
+		</tr>
+		<tr class="row-184 even">
+			<td class="column-1" colspan="3"><b>August 2020</b></td>
+		</tr>
+		<tr class="row-185 odd">
+			<td class="column-1">31/08/2020</td>
+			<td class="column-2">89</td>
+			<td class="column-3">12</td>
+		</tr>
+		<tr class="row-186 even">
+			<td class="column-1">30/08/2020</td>
+			<td class="column-2">Off</td>
+			<td class="column-3">Off</td>
+		</tr>
+		<tr class="row-187 odd">
+			<td class="column-1">29/08/2020</td>
+			<td class="column-2">Off</td>
+			<td class="column-3">Off</td>
+		</tr>
+		<tr class="row-188 even">
+			<td class="column-1">28/08/2020</td>
+			<td class="column-2">59</td>
+			<td class="column-3">44</td>
+		</tr>
+		<tr class="row-189 odd">
+			<td class="column-1">27/08/2020</td>
+			<td class="column-2">61</td>
+			<td class="column-3">30</td>
+		</tr>
+		<tr class="row-190 even">
+			<td class="column-1">26/08/2020</td>
+			<td class="column-2">43</td>
+			<td class="column-3">67</td>
+		</tr>
+		<tr class="row-191 odd">
+			<td class="column-1">25/08/2020</td>
+			<td class="column-2">84</td>
+			<td class="column-3">71</td>
+		</tr>
+		<tr class="row-192 even">
+			<td class="column-1">24/08/2020</td>
+			<td class="column-2">87</td>
+			<td class="column-3">49</td>
+		</tr>
+		<tr class="row-193 odd">
+			<td class="column-1">23/08/2020</td>
+			<td class="column-2">OFF</td>
+			<td class="column-3">OFF</td>
+		</tr>
+		<tr class="row-194 even">
+			<td class="column-1">22/08/2020</td>
+			<td class="column-2">OFF</td>
+			<td class="column-3">OFF</td>
+		</tr>
+		<tr class="row-195 odd">
+			<td class="column-1">21/08/2020</td>
+			<td class="column-2">28</td>
+			<td class="column-3">05</td>
+		</tr>
+		<tr class="row-196 even">
+			<td class="column-1">20/08/2020</td>
+			<td class="column-2">41</td>
+			<td class="column-3">12</td>
+		</tr>
+		<tr class="row-197 odd">
+			<td class="column-1">19/08/2020</td>
+			<td class="column-2">11</td>
+			<td class="column-3">27</td>
+		</tr>
+		<tr class="row-198 even">
+			<td class="column-1">18/08/2020</td>
+			<td class="column-2">43</td>
+			<td class="column-3">79</td>
+		</tr>
+		<tr class="row-199 odd">
+			<td class="column-1">17/08/2020</td>
+			<td class="column-2">90</td>
+			<td class="column-3">17</td>
+		</tr>
+		<tr class="row-200 even">
+			<td class="column-1">From 1st Aug to 16th Aug</td>
+			<td class="column-2">Off</td>
+			<td class="column-3">Off</td>
+		</tr>
+		<tr class="row-201 odd">
+			<td class="column-1" colspan="3"><b>July 2020</b></td>
+		</tr>
+		<tr class="row-202 even">
+			<td class="column-1">All Days</td>
+			<td class="column-2">Off</td>
+			<td class="column-3">Off</td>
+		</tr>
+		<tr class="row-203 odd">
+			<td class="column-1" colspan="3"><b>June 2020</b></td>
+		</tr>
+		<tr class="row-204 even">
+			<td class="column-1">All Days</td>
+			<td class="column-2">Off</td>
+			<td class="column-3">Off</td>
+		</tr>
+		<tr class="row-205 odd">
+			<td class="column-1" colspan="3"><b>May 2020</b></td>
+		</tr>
+		<tr class="row-206 even">
+			<td class="column-1">All Days</td>
+			<td class="column-2">Off</td>
+			<td class="column-3">Off</td>
+		</tr>
+		<tr class="row-207 odd">
+			<td class="column-1" colspan="3"><b>April 2020</b></td>
+		</tr>
+		<tr class="row-208 even">
+			<td class="column-1">All Days</td>
+			<td class="column-2">Off</td>
+			<td class="column-3">Off</td>
+		</tr>
+		<tr class="row-209 odd">
+			<td class="column-1" colspan="3"><b>March 2020</b></td>
+		</tr>
+		<tr class="row-210 even">
+			<td class="column-1">31/03/2020</td>
+			<td class="column-2">Off</td>
+			<td class="column-3">Off</td>
+		</tr>
+		<tr class="row-211 odd">
+			<td class="column-1">30/03/2020</td>
+			<td class="column-2">Off</td>
+			<td class="column-3">Off</td>
+		</tr>
+		<tr class="row-212 even">
+			<td class="column-1">29/03/2020</td>
+			<td class="column-2">Off</td>
+			<td class="column-3">Off</td>
+		</tr>
+		<tr class="row-213 odd">
+			<td class="column-1">28/03/2020</td>
+			<td class="column-2">Off</td>
+			<td class="column-3">Off</td>
+		</tr>
+		<tr class="row-214 even">
+			<td class="column-1">27/03/2020</td>
+			<td class="column-2">Off</td>
+			<td class="column-3">Off</td>
+		</tr>
+		<tr class="row-215 odd">
+			<td class="column-1">26/03/2020</td>
+			<td class="column-2">Off</td>
+			<td class="column-3">Off</td>
+		</tr>
+		<tr class="row-216 even">
+			<td class="column-1">25/03/2020</td>
+			<td class="column-2">Off</td>
+			<td class="column-3">Off</td>
+		</tr>
+		<tr class="row-217 odd">
+			<td class="column-1">24/03/2020</td>
+			<td class="column-2">Off</td>
+			<td class="column-3">Off</td>
+		</tr>
+		<tr class="row-218 even">
+			<td class="column-1">23/03/2020</td>
+			<td class="column-2">Off</td>
+			<td class="column-3">Off</td>
+		</tr>
+		<tr class="row-219 odd">
+			<td class="column-1">22/03/2020</td>
+			<td class="column-2">Off</td>
+			<td class="column-3">Off</td>
+		</tr>
+		<tr class="row-220 even">
+			<td class="column-1">21/03/2020</td>
+			<td class="column-2">Off</td>
+			<td class="column-3">Off</td>
+		</tr>
+		<tr class="row-221 odd">
+			<td class="column-1">20/03/2020</td>
+			<td class="column-2">33</td>
+			<td class="column-3">64</td>
+		</tr>
+		<tr class="row-222 even">
+			<td class="column-1">19/03/2020</td>
+			<td class="column-2">67</td>
+			<td class="column-3">14</td>
+		</tr>
+		<tr class="row-223 odd">
+			<td class="column-1">18/03/2020</td>
+			<td class="column-2">57</td>
+			<td class="column-3">68</td>
+		</tr>
+		<tr class="row-224 even">
+			<td class="column-1">17/03/2020</td>
+			<td class="column-2">88</td>
+			<td class="column-3">03</td>
+		</tr>
+		<tr class="row-225 odd">
+			<td class="column-1">16/03/2020</td>
+			<td class="column-2">06</td>
+			<td class="column-3">06</td>
+		</tr>
+		<tr class="row-226 even">
+			<td class="column-1">15/03/2020</td>
+			<td class="column-2">Off</td>
+			<td class="column-3">Off</td>
+		</tr>
+		<tr class="row-227 odd">
+			<td class="column-1">14/03/2020</td>
+			<td class="column-2">43</td>
+			<td class="column-3">44</td>
+		</tr>
+		<tr class="row-228 even">
+			<td class="column-1">13/03/2020</td>
+			<td class="column-2">97</td>
+			<td class="column-3">00</td>
+		</tr>
+		<tr class="row-229 odd">
+			<td class="column-1">12/03/2020</td>
+			<td class="column-2">79</td>
+			<td class="column-3">45</td>
+		</tr>
+		<tr class="row-230 even">
+			<td class="column-1">11/03/2020</td>
+			<td class="column-2">17</td>
+			<td class="column-3">83</td>
+		</tr>
+		<tr class="row-231 odd">
+			<td class="column-1">10/03/2020</td>
+			<td class="column-2">Off</td>
+			<td class="column-3">Off</td>
+		</tr>
+		<tr class="row-232 even">
+			<td class="column-1">09/03/2020</td>
+			<td class="column-2">35</td>
+			<td class="column-3">97</td>
+		</tr>
+		<tr class="row-233 odd">
+			<td class="column-1">08/03/2020</td>
+			<td class="column-2">Off</td>
+			<td class="column-3">Off</td>
+		</tr>
+		<tr class="row-234 even">
+			<td class="column-1">07/03/2020</td>
+			<td class="column-2">26</td>
+			<td class="column-3">36</td>
+		</tr>
+		<tr class="row-235 odd">
+			<td class="column-1">06/03/2020</td>
+			<td class="column-2">31</td>
+			<td class="column-3">28</td>
+		</tr>
+		<tr class="row-236 even">
+			<td class="column-1">05/03/2020</td>
+			<td class="column-2">90</td>
+			<td class="column-3">31</td>
+		</tr>
+		<tr class="row-237 odd">
+			<td class="column-1">04/03/2020</td>
+			<td class="column-2">94</td>
+			<td class="column-3">99</td>
+		</tr>
+		<tr class="row-238 even">
+			<td class="column-1">03/03/2020</td>
+			<td class="column-2">21</td>
+			<td class="column-3">30</td>
+		</tr>
+		<tr class="row-239 odd">
+			<td class="column-1">02/03/2020</td>
+			<td class="column-2">82</td>
+			<td class="column-3">80</td>
+		</tr>
+		<tr class="row-240 even">
+			<td class="column-1">01/03/2020</td>
+			<td class="column-2">Off</td>
+			<td class="column-3">Off</td>
+		</tr>
+		<tr class="row-241 odd">
+			<td class="column-1" colspan="3"><b>February 2020</b></td>
+		</tr>
+		<tr class="row-242 even">
+			<td class="column-1">29/02/2020</td>
+			<td class="column-2">68</td>
+			<td class="column-3">90</td>
+		</tr>
+		<tr class="row-243 odd">
+			<td class="column-1">28/02/2020</td>
+			<td class="column-2">34</td>
+			<td class="column-3">85</td>
+		</tr>
+		<tr class="row-244 even">
+			<td class="column-1">27/02/2020</td>
+			<td class="column-2">90</td>
+			<td class="column-3">82</td>
+		</tr>
+		<tr class="row-245 odd">
+			<td class="column-1">26/02/2020</td>
+			<td class="column-2">92</td>
+			<td class="column-3">24</td>
+		</tr>
+		<tr class="row-246 even">
+			<td class="column-1">25/02/2020</td>
+			<td class="column-2">12</td>
+			<td class="column-3">49</td>
+		</tr>
+		<tr class="row-247 odd">
+			<td class="column-1">24/02/2020</td>
+			<td class="column-2">21</td>
+			<td class="column-3">19</td>
+		</tr>
+		<tr class="row-248 even">
+			<td class="column-1">23/02/2020</td>
+			<td class="column-2">Off</td>
+			<td class="column-3">Off</td>
+		</tr>
+		<tr class="row-249 odd">
+			<td class="column-1">22/02/2020</td>
+			<td class="column-2">28</td>
+			<td class="column-3">98</td>
+		</tr>
+		<tr class="row-250 even">
+			<td class="column-1">21/02/2020</td>
+			<td class="column-2">52</td>
+			<td class="column-3">61</td>
+		</tr>
+		<tr class="row-251 odd">
+			<td class="column-1">20/02/2020</td>
+			<td class="column-2">99</td>
+			<td class="column-3">65</td>
+		</tr>
+		<tr class="row-252 even">
+			<td class="column-1">19/02/2020</td>
+			<td class="column-2">88</td>
+			<td class="column-3">62</td>
+		</tr>
+		<tr class="row-253 odd">
+			<td class="column-1">18/02/2020</td>
+			<td class="column-2">75</td>
+			<td class="column-3">95</td>
+		</tr>
+		<tr class="row-254 even">
+			<td class="column-1">17/02/2020</td>
+			<td class="column-2">54</td>
+			<td class="column-3">00</td>
+		</tr>
+		<tr class="row-255 odd">
+			<td class="column-1">16/02/2020</td>
+			<td class="column-2">Off</td>
+			<td class="column-3">Off</td>
+		</tr>
+		<tr class="row-256 even">
+			<td class="column-1">15/02/2020</td>
+			<td class="column-2">38</td>
+			<td class="column-3">88</td>
+		</tr>
+		<tr class="row-257 odd">
+			<td class="column-1">14/02/2020</td>
+			<td class="column-2">90</td>
+			<td class="column-3">37</td>
+		</tr>
+		<tr class="row-258 even">
+			<td class="column-1">13/02/2020</td>
+			<td class="column-2">35</td>
+			<td class="column-3">77</td>
+		</tr>
+		<tr class="row-259 odd">
+			<td class="column-1">12/02/2020</td>
+			<td class="column-2">98</td>
+			<td class="column-3">33</td>
+		</tr>
+		<tr class="row-260 even">
+			<td class="column-1">11/02/2020</td>
+			<td class="column-2">21</td>
+			<td class="column-3">56</td>
+		</tr>
+		<tr class="row-261 odd">
+			<td class="column-1">10/02/2020</td>
+			<td class="column-2">42</td>
+			<td class="column-3">93</td>
+		</tr>
+		<tr class="row-262 even">
+			<td class="column-1">09/02/2020</td>
+			<td class="column-2">Off</td>
+			<td class="column-3">Off</td>
+		</tr>
+		<tr class="row-263 odd">
+			<td class="column-1">08/02/2020</td>
+			<td class="column-2">94</td>
+			<td class="column-3">49</td>
+		</tr>
+		<tr class="row-264 even">
+			<td class="column-1">07/02/2020</td>
+			<td class="column-2">81</td>
+			<td class="column-3">88</td>
+		</tr>
+		<tr class="row-265 odd">
+			<td class="column-1">06/02/2020</td>
+			<td class="column-2">03</td>
+			<td class="column-3">25</td>
+		</tr>
+		<tr class="row-266 even">
+			<td class="column-1">05/02/2020</td>
+			<td class="column-2">24</td>
+			<td class="column-3">83</td>
+		</tr>
+		<tr class="row-267 odd">
+			<td class="column-1">04/02/2020</td>
+			<td class="column-2">13</td>
+			<td class="column-3">99</td>
+		</tr>
+		<tr class="row-268 even">
+			<td class="column-1">03/02/2020</td>
+			<td class="column-2">74</td>
+			<td class="column-3">40</td>
+		</tr>
+		<tr class="row-269 odd">
+			<td class="column-1">02/02/2020</td>
+			<td class="column-2">Off</td>
+			<td class="column-3">Off</td>
+		</tr>
+		<tr class="row-270 even">
+			<td class="column-1">01/02/2020</td>
+			<td class="column-2">33</td>
+			<td class="column-3">03</td>
+		</tr>
+		<tr class="row-271 odd">
+			<td class="column-1" colspan="3"><b>January 2020</b></td>
+		</tr>
+		<tr class="row-272 even">
+			<td class="column-1">31/01/2020</td>
+			<td class="column-2">07</td>
+			<td class="column-3">36</td>
+		</tr>
+		<tr class="row-273 odd">
+			<td class="column-1">30/01/2020</td>
+			<td class="column-2">24</td>
+			<td class="column-3">48</td>
+		</tr>
+		<tr class="row-274 even">
+			<td class="column-1">29/01/2020</td>
+			<td class="column-2">38</td>
+			<td class="column-3">77</td>
+		</tr>
+		<tr class="row-275 odd">
+			<td class="column-1">28/01/2020</td>
+			<td class="column-2">28</td>
+			<td class="column-3">89</td>
+		</tr>
+		<tr class="row-276 even">
+			<td class="column-1">27/01/2020</td>
+			<td class="column-2">95</td>
+			<td class="column-3">14</td>
+		</tr>
+		<tr class="row-277 odd">
+			<td class="column-1">26/01/2020</td>
+			<td class="column-2">Off</td>
+			<td class="column-3">Off</td>
+		</tr>
+		<tr class="row-278 even">
+			<td class="column-1">25/01/2020</td>
+			<td class="column-2">29</td>
+			<td class="column-3">75</td>
+		</tr>
+		<tr class="row-279 odd">
+			<td class="column-1">24/01/2020</td>
+			<td class="column-2">03</td>
+			<td class="column-3">05</td>
+		</tr>
+		<tr class="row-280 even">
+			<td class="column-1">23/01/2020</td>
+			<td class="column-2">72</td>
+			<td class="column-3">12</td>
+		</tr>
+		<tr class="row-281 odd">
+			<td class="column-1">22/01/2020</td>
+			<td class="column-2">71</td>
+			<td class="column-3">64</td>
+		</tr>
+		<tr class="row-282 even">
+			<td class="column-1">21/01/2020</td>
+			<td class="column-2">75</td>
+			<td class="column-3">36</td>
+		</tr>
+		<tr class="row-283 odd">
+			<td class="column-1">20/01/2020</td>
+			<td class="column-2">93</td>
+			<td class="column-3">71</td>
+		</tr>
+		<tr class="row-284 even">
+			<td class="column-1">19/01/2020</td>
+			<td class="column-2">Off</td>
+			<td class="column-3">Off</td>
+		</tr>
+		<tr class="row-285 odd">
+			<td class="column-1">18/01/2020</td>
+			<td class="column-2">98</td>
+			<td class="column-3">54</td>
+		</tr>
+		<tr class="row-286 even">
+			<td class="column-1">17/01/2020</td>
+			<td class="column-2">48</td>
+			<td class="column-3">73</td>
+		</tr>
+		<tr class="row-287 odd">
+			<td class="column-1">16/01/2020</td>
+			<td class="column-2">11</td>
+			<td class="column-3">98</td>
+		</tr>
+		<tr class="row-288 even">
+			<td class="column-1">15/01/2020</td>
+			<td class="column-2">13</td>
+			<td class="column-3">30</td>
+		</tr>
+		<tr class="row-289 odd">
+			<td class="column-1">14/01/2020</td>
+			<td class="column-2">26</td>
+			<td class="column-3">08</td>
+		</tr>
+		<tr class="row-290 even">
+			<td class="column-1">13/01/2020</td>
+			<td class="column-2">43</td>
+			<td class="column-3">05</td>
+		</tr>
+		<tr class="row-291 odd">
+			<td class="column-1">12/01/2020</td>
+			<td class="column-2">Off</td>
+			<td class="column-3">Off</td>
+		</tr>
+		<tr class="row-292 even">
+			<td class="column-1">11/01/2020</td>
+			<td class="column-2">05</td>
+			<td class="column-3">30</td>
+		</tr>
+		<tr class="row-293 odd">
+			<td class="column-1">10/01/2020</td>
+			<td class="column-2">34</td>
+			<td class="column-3">13</td>
+		</tr>
+		<tr class="row-294 even">
+			<td class="column-1">09/01/2020</td>
+			<td class="column-2">69</td>
+			<td class="column-3">40</td>
+		</tr>
+		<tr class="row-295 odd">
+			<td class="column-1">08/01/2020</td>
+			<td class="column-2">43</td>
+			<td class="column-3">48</td>
+		</tr>
+		<tr class="row-296 even">
+			<td class="column-1">07/01/2020</td>
+			<td class="column-2">07</td>
+			<td class="column-3">51</td>
+		</tr>
+		<tr class="row-297 odd">
+			<td class="column-1">06/01/2020</td>
+			<td class="column-2">08</td>
+			<td class="column-3">84</td>
+		</tr>
+		<tr class="row-298 even">
+			<td class="column-1">05/01/2020</td>
+			<td class="column-2">Off</td>
+			<td class="column-3">Off</td>
+		</tr>
+		<tr class="row-299 odd">
+			<td class="column-1">04/01/2020</td>
+			<td class="column-2">69</td>
+			<td class="column-3">81</td>
+		</tr>
+		<tr class="row-300 even">
+			<td class="column-1">03/01/2020</td>
+			<td class="column-2">50</td>
+			<td class="column-3">85</td>
+		</tr>
+		<tr class="row-301 odd">
+			<td class="column-1">02/01/2020</td>
+			<td class="column-2">75</td>
+			<td class="column-3">25</td>
+		</tr>
+		<tr class="row-302 even">
+			<td class="column-1">01/01/2020</td>
+			<td class="column-2">94</td>
+			<td class="column-3">16</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+<!-- .entry-content .clear --></article>
+<!-- #post-## --></main>
+<!-- #main --></div>
+<!-- #primary -->
+
+<div class="widget-area secondary" id="secondary" itemscope="itemscope" itemtype="https://schema.org/WPSideBar" role="complementary">
+<div class="sidebar-main">
+<aside class="widget widget_search" id="search-2">
+<form action="https://teerresult.in/" class="search-form" method="get" role="search"><label><span class="screen-reader-text">Search fo</span></label></form>
+</aside>
+</div>
+<!-- .sidebar-main --></div>
+<!-- #secondary --></div>
+<!-- ast-container --></div>
+<!-- #content -->
+
+<footer class="site-footer" id="colophon" itemscope="itemscope" itemtype="https://schema.org/WPFooter">
+<div class="footer-adv footer-adv-layout-3">
+<div class="footer-adv-overlay">
+<div class="ast-container">
+<div class="ast-row">
+<div class="ast-col-lg-4 ast-col-md-4 ast-col-sm-12 ast-col-xs-12 footer-adv-widget footer-adv-widget-1">
+<div class="widget widget_text" id="text-6">
+<h2 class="widget-title">**Warning**</h2>
+
+<div class="textwidget">
+<p>TeerResult.in is not an Official website of the Game. The results are collected from various online free sources. Results published here may not be 100% accurate. You must contact Official counters for cross checking the results. This is only a result provider website. We are not affiliated to any teer official counters in any manner.</p>
+</div>
+</div>
+</div>
+
+<div class="ast-col-lg-4 ast-col-md-4 ast-col-sm-12 ast-col-xs-12 footer-adv-widget footer-adv-widget-2">
+<div class="widget widget_text" id="text-8">
+<h2 class="widget-title">Disclaimer for Visitors</h2>
+
+<div class="textwidget">
+<p>All the content of the site are prepared for Meghalaya users only as this game is legalized by the Meghalaya State Government. We also advice that minors should stay away from viewing any content in our site. Also, if you are outside Meghalaya you must stop browsing this site.</p>
+</div>
+</div>
+</div>
+
+<div class="ast-col-lg-4 ast-col-md-4 ast-col-sm-12 ast-col-xs-12 footer-adv-widget footer-adv-widget-3">
+<div class="widget_text widget widget_custom_html" id="custom_html-3">
+<div class="textwidget custom-html-widget"><font color="orange"><u>Important Note</u></font><br />
+We do not sell any service. We do not call or email or contact any of our visitors.If someone contacts you in the name of teerresult.in then please do not respond them.</div>
+</div>
+</div>
+</div>
+<!-- .ast-row --></div>
+<!-- .ast-container --></div>
+<!-- .footer-adv-overlay--></div>
+<!-- .ast-theme-footer .footer-adv-layout-3 -->
+
+<div class="ast-small-footer footer-sml-layout-1">
+<div class="ast-footer-overlay">
+<div class="ast-container">
+<div class="ast-small-footer-wrap">
+<div class="ast-small-footer-section ast-small-footer-section-1">Copyright &copy; 2021 <span class="ast-footer-site-title">TeerResult.in</span> | Powered by TeerResult.in</div>
+</div>
+<!-- .ast-row .ast-small-footer-wrap --></div>
+<!-- .ast-container --></div>
+<!-- .ast-footer-overlay --></div>
+<!-- .ast-small-footer--></footer>
+<!-- #colophon --></div>
+<!-- #page --><!--noptimize-->
+<style type="text/css">.mb-center.maxbutton-1-center{display:block;text-align:center}.mb-center.maxbutton-1-center .maxbutton-1-container.mb-container{margin-top:0px;margin-right:0px;margin-bottom:0px;margin-left:0px;display:inline-block}.mb-center.maxbutton-1-center .maxbutton-1-container.mb-container .maxbutton-1.maxbutton.maxbutton-shillong-teer-result-today{position:relative;text-decoration:none;display:inline-block;vertical-align:middle;width:164px;height:50px;border-top-left-radius:41px;border-top-right-radius:41px;border-bottom-left-radius:41px;border-bottom-right-radius:41px;border-width:0px;background-color:#064851;-webkit-box-shadow:0px 0px 2px 0px #333333;-moz-box-shadow:0px 0px 2px 0px #333333;box-shadow:0px 0px 2px 0px #333333}.mb-center.maxbutton-1-center .maxbutton-1-container.mb-container .maxbutton-1.maxbutton.maxbutton-shillong-teer-result-today:hover{background-color:white;-webkit-box-shadow:0px 0px 2px 0px #333333;-moz-box-shadow:0px 0px 2px 0px #333333;box-shadow:0px 0px 2px 0px #333333}.mb-center.maxbutton-1-center .maxbutton-1-container.mb-container .maxbutton-1.maxbutton.maxbutton-shillong-teer-result-today .mb-text{color:#ffffff;font-family:Tahoma;font-size:16px;text-align:center;font-style:normal;font-weight:normal;padding-top:12px;padding-right:2px;padding-bottom:0px;padding-left:0px;line-height:1em;box-sizing:border-box;display:block;background-color:unset}.mb-center.maxbutton-1-center .maxbutton-1-container.mb-container .maxbutton-1.maxbutton.maxbutton-shillong-teer-result-today:hover .mb-text{color:#1b2db7}
+</style>
+<!--/noptimize-->
+<div class="msgmsg-box-wpcp hideme" id="wpcp-error-message"><span>error: </span></div>
+<script>
+	var timeout_result;
+	function show_wpcp_message(smessage)
+	{
+		if (smessage !== "")
+			{
+			var smessage_text = '<span>Alert: </span>'+smessage;
+			document.getElementById("wpcp-error-message").innerHTML = smessage_text;
+			document.getElementById("wpcp-error-message").className = "msgmsg-box-wpcp warning-wpcp showme";
+			clearTimeout(timeout_result);
+			timeout_result = setTimeout(hide_message, 3000);
+			}
+	}
+	function hide_message()
+	{
+		document.getElementById("wpcp-error-message").className = "msgmsg-box-wpcp warning-wpcp hideme";
+	}
+	</script>
+<style type="text/css">#wpcp-error-message {
+	    direction: ltr;
+	    text-align: center;
+	    transition: opacity 900ms ease 0s;
+	    z-index: 99999999;
+	}
+	.hideme {
+    	opacity:0;
+    	visibility: hidden;
+	}
+	.showme {
+    	opacity:1;
+    	visibility: visible;
+	}
+	.msgmsg-box-wpcp {
+		border:1px solid #f5aca6;
+		border-radius: 10px;
+		color: #555;
+		font-family: Tahoma;
+		font-size: 11px;
+		margin: 10px;
+		padding: 10px 36px;
+		position: fixed;
+		width: 255px;
+		top: 50%;
+  		left: 50%;
+  		margin-top: -10px;
+  		margin-left: -130px;
+  		-webkit-box-shadow: 0px 0px 34px 2px rgba(242,191,191,1);
+		-moz-box-shadow: 0px 0px 34px 2px rgba(242,191,191,1);
+		box-shadow: 0px 0px 34px 2px rgba(242,191,191,1);
+	}
+	.msgmsg-box-wpcp span {
+		font-weight:bold;
+		text-transform:uppercase;
+	}
+		.warning-wpcp {
+		background:#ffecec url('https://teerresult.in/wp-content/plugins/wp-content-copy-protector/images/warning.png') no-repeat 10px 50%;
+	}
+</style>
+<p><a class="ast-scroll-top-icon ast-scroll-to-top-right" data-on-devices="both" id="ast-scroll-top"> <span class="screen-reader-text">Scroll to Top</span> </a></p>
+</body>
+<link href="https://teerresult.in/wp-content/plugins/widget-countdown/includes/style/style.css?ver=5.3.6" id="countdown_css-css" media="all" rel="stylesheet" />
+<link href="https://teerresult.in/wp-includes/css/dashicons.min.css?ver=5.3.6" id="dashicons-css" media="all" rel="stylesheet" />
+<link href="https://teerresult.in/wp-includes/js/thickbox/thickbox.css?ver=5.3.6" id="thickbox-css" media="all" rel="stylesheet" /><script>
+var astra = {"break_point":"921","isRtl":"","query_vars":"{\"page\":\"\",\"pagename\":\"khanapara-teer-previous-results\"}","edit_post_url":"https:\/\/teerresult.in\/wp-admin\/post.php?post={{id}}&action=edit","ajax_url":"https:\/\/teerresult.in\/wp-admin\/admin-ajax.php","infinite_count":"2","infinite_total":"0","pagination":"number","infinite_scroll_event":"scroll","infinite_nonce":"a0cedc5ff7","no_more_post_message":"No more posts to show.","grid_layout":"1","site_url":"https:\/\/teerresult.in","show_comments":"Show Comments","masonryEnabled":"","blogMasonryBreakPoint":"921"};
+</script><script src='https://teerresult.in/wp-content/themes/astra/assets/js/minified/style.min.js?ver=2.4.3'></script><script>
+var wpcf7 = {"apiSettings":{"root":"https:\/\/teerresult.in\/wp-json\/contact-form-7\/v1","namespace":"contact-form-7\/v1"},"cached":"1"};
+</script><script src='https://teerresult.in/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=5.1.7'></script><script>
+var astraAddon = {"sticky_active":"","header_main_stick":"0","header_above_stick":"0","header_below_stick":"0","stick_header_meta":"","header_main_stick_meta":"","header_above_stick_meta":"","header_below_stick_meta":"","sticky_header_on_devices":"desktop","sticky_header_style":"none","sticky_hide_on_scroll":"0","break_point":"921","header_main_shrink":"1","header_logo_width":"","responsive_header_logo_width":{"desktop":"248","tablet":"","mobile":""},"stick_origin_position":"","site_layout":"ast-full-width-layout","site_content_width":"1240","site_layout_padded_width":"1200","site_layout_box_width":"1200"};
+</script><script src='https://teerresult.in/wp-content/uploads/astra-addon/astra-addon-6016bafec1a0e5-33516747.js?ver=2.4.1'></script><script src='https://teerresult.in/wp-includes/js/wp-embed.min.js?ver=5.3.6'></script><script src='https://teerresult.in/wp-content/plugins/widget-countdown/includes/javascript/front_end_js.js?ver=5.3.6'></script><script>
+var thickboxL10n = {"next":"Next >","prev":"< Prev","image":"Image","of":"of","close":"Close","noiframes":"This feature requires inline frames. You have iframes disabled or your browser does not support them.","loadingAnimation":"https:\/\/teerresult.in\/wp-includes\/js\/thickbox\/loadingAnimation.gif"};
+</script><script src='https://teerresult.in/wp-includes/js/thickbox/thickbox.js?ver=3.1-20121105'></script><script>
+			/(trident|msie)/i.test(navigator.userAgent)&&document.getElementById&&window.addEventListener&&window.addEventListener("hashchange",function(){var t,e=location.hash.substring(1);/^[A-z0-9_-]+$/.test(e)&&(t=document.getElementById(e))&&(/^(?:a|select|input|button|textarea)$/i.test(t.tagName)||(t.tabIndex=-1),t.focus())},!1);
+			</script><script type='text/javascript' style='display:none;' async>
+__ez.queue.addFile('edmonton.php', '/detroitchicago/edmonton.webp?a=a&cb=0&shcb=34', true, ['/detroitchicago/minneapolis.js'], true, false, false, false);
+__ez.queue.addFile('jellyfish.php', '/porpoiseant/jellyfish.webp?a=a&cb=0&shcb=34', false, [], true, false, false, false);
+</script><script>var _audins_dom="teerresult_in",_audins_did=212531;__ez.queue.addDelayFunc("audins.js","__ez.script.add", "//go.ezoic.net/detroitchicago/audins.js?cb=192-0");</script><noscript><div style="display:none;"><img src="//pixel.quantserve.com/pixel/p-31iz6hfFutd16.gif?labels=Domain.teerresult_in,DomainId.212531" border="0" height="1" width="1" alt="Quantcast"/></div></noscript><script type="text/javascript" data-cfasync="false"></script></html>
